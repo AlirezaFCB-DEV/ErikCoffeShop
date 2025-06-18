@@ -1,1 +1,37 @@
 @import "tailwindcss";
+@layer base {
+  @font-face {
+    font-family: morabba-regular;
+    font-weight: normal;
+    src: url("/fonts/Morabba-Regular.ttf") format(truetype);
+  }
+  @font-face {
+    font-family: morabba-bold;
+    font-weight: bold;
+    src: url("/fonts/Morabba-Bold.ttf") format(truetype);
+  }
+  @font-face {
+    font-family: iran-yekan-regular;
+    src: url("/fonts/IRANYekanRegular.ttf");
+  }
+  @font-face {
+    font-family: iran-yekan-bold;
+    src: url("/public/fonts/iranyekanwebbold.ttf");
+  }
+  @font-face {
+    font-family: ms-madi;
+    src: url("/fonts/MsMadi-Regular.ttf");
+  }
+}
+
+@theme {
+  --color-primary: #9e624c;
+  --color-secondary: #f2e5da;
+  --color-stroke: #e9e9e8;
+  --color-txt: #28221e;
+  --font-morabba: morabba-regular;
+  --font-morabba-bold: morabba-bold;
+  --font-iran-yekan: iran-yekan-regular;
+  --font-iran-yekan-bold: iran-yekan-bold;
+  --font-ms-madi: ms-madi;
+}

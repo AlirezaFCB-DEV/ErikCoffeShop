@@ -1,7 +1,11 @@
+import Header from "./Components/Header/Header.tsx"
+
 const App = () => {
   return (
-    <div className="font-morabba">سلام</div>
-  )
-}
+    <>
+      <Header></Header>
+    </>
+  );
+};
 
-export default App
+export default App;

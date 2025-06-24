@@ -35,3 +35,9 @@
   --font-iran-yekan-bold: iran-yekan-bold;
   --font-ms-madi: ms-madi;
 }
+
+@layer utilities {
+  .container {
+    width: 80%;
+  }
+}

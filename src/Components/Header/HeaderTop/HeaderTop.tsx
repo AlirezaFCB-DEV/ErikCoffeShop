@@ -5,7 +5,7 @@ const HeaderTop = () => {
     <section className="flex justify-between items-center">
       <div className="flex flex-row-reverse justify-center items-center gap-2">
         <div className="bg-secondary p-3 rounded-full">
-          <img src="/images/Vector.svg" alt="image" className="size-4.5" />
+          <img src="/images/coffee.svg" alt="image" className="size-4.5" />
         </div>
         <div className="text-left leading-4.5">
           <h2 className="font-iran-yekan-bold text-primary text-lg">-۰۲۱</h2>

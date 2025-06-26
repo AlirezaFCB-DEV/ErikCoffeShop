@@ -29,6 +29,7 @@
   --color-secondary: #f2e5da;
   --color-stroke: #e9e9e8;
   --color-txt: #28221e;
+  --color-white-20 : #FFFFFF33;
   --font-morabba: morabba-regular;
   --font-morabba-bold: morabba-bold;
   --font-iran-yekan: iran-yekan-regular;
@@ -38,6 +39,6 @@
 
 @layer utilities {
   .container {
-    width: 80%;
+    width: 87%;
   }
 }

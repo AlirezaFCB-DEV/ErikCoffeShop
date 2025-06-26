@@ -4,16 +4,16 @@ import { RiCircleFill } from "react-icons/ri";
 
 const NavigationMenu = () => {
   return (
-    <nav className="flex justify-between pl-4.5 pr-10 min-h-17 items-center rounded-full bg-txt text-white">
-      <ul className="flex items-center gap-5">
+    <nav className="flex justify-between pl-4 pr-15 min-h-17 items-center rounded-full bg-txt text-white">
+      <ul className="flex items-center gap-10">
         <li>
           <a href="#" className="flex items-center gap-1">
-            <RiCircleFill className="text-[10px] mt-1.5" />
-            <span>صفحه اصلی</span>
+            <RiCircleFill className="text-[10px]" />
+            <span className="">صفحه اصلی</span>
           </a>
         </li>
         <li>
-          <a href="#" className="flex items-end  gap-0.5">
+          <a href="#" className="flex items-center gap-0.5">
             لیست محصولات
             <IoIosArrowDown></IoIosArrowDown>
           </a>
@@ -31,8 +31,8 @@ const NavigationMenu = () => {
           <a href="#">تماس باما</a>
         </li>
       </ul>
-      <div className="flex bg-[#FFFFFF33] p-2.5 rounded-full items-center gap-0.5">
-        <span className="text-sm">Erick.Cafe</span>
+      <div className="flex bg-white-20 p-2.5 rounded-full items-center gap-1">
+        <span className="text-sm mt-0.5">Erick.Cafe</span>
         <FaInstagram className="text-2xl" />
       </div>
     </nav>

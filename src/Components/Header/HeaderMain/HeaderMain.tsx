@@ -1,12 +1,13 @@
-import NavigationMenu from "./NavigationMenu/NavigationMenu"
+import HeaderMainContent from "./HeaderMainContent/HeaderMainContent";
+import NavigationMenu from "./NavigationMenu/NavigationMenu";
 
 const HeaderMain = () => {
   return (
-      <section>
-          <NavigationMenu />
-          <div></div>
+    <section className="flex flex-col gap-8">
+      <NavigationMenu />
+      <HeaderMainContent />
     </section>
-  )
-}
+  );
+};
 
-export default HeaderMain
+export default HeaderMain;

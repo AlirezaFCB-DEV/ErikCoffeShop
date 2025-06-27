@@ -1,12 +1,25 @@
-const HeaderBottom = () => {
-  const imgArr: number[] = Array.from({ length: 20 }, (_, index) => index);
+interface imgArrType {
+  id: string;
+  index: number;
+}
 
-  const doubleArr : number[] = [...imgArr , ...imgArr] 
+const createImgArr = (count: number): imgArrType[] =>
+  Array.from({ length: count }, (_, index) => ({
+    id: crypto.randomUUID(),
+    index,
+  }));
+
+const HeaderBottom = () => {
+  const imgArr: imgArrType[] = createImgArr(20);
+
+  const duplicate_arr: imgArrType[] = createImgArr(20);
+
+  const doubleArr: imgArrType[] = [...imgArr, ...duplicate_arr];
 
   return (
-    <div className="flex p-4 bg-secondary justify-between absolute -bottom-8 left-0 w-fit gap-24 move">
-      {doubleArr.map((item : number) => (
-        <img key={item} src="/images/image 6.svg" alt="تبلیغ" />
+    <div className="flex items-center p-4 bg-secondary w-fit gap-24  h-16 move">
+      {doubleArr.map((item: imgArrType) => (
+        <img key={item.id} src="/images/image 6.svg" alt="تبلیغ" />
       ))}
     </div>
   );

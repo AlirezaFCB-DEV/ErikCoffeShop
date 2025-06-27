@@ -3,7 +3,7 @@ import { ImLeaf } from "react-icons/im";
 
 const HeaderMainContent = () => {
   return (
-    <div className="flex gap-6 text-white ">
+    <div className="flex gap-6 text-white pb-20">
       <div className="bg-txt flex-1 p-12 rounded-2xl flex flex-col justify-center gap-8">
         <div className="flex flex-col gap-3">
           <span className="font-ms-madi text-2xl">ErickCoffee</span>
@@ -23,7 +23,7 @@ const HeaderMainContent = () => {
           <FaArrowLeftLong className="text-xl" />
         </a>
       </div>
-      <div className="bg-[#847669] opacity-90 p-20 flex-3 flex items-center relative min-h-110.25 rounded-2xl overflow-hidden">
+      <div className="bg-[#847669] opacity-90 p-20 flex-3 flex items-center relative min-h-100 rounded-2xl overflow-hidden">
         <div className="flex flex-col gap-8">
           <h2 className="font-morabba-bold text-5xl">کـــافــــه از تــــو</h2>
           <span className="text-2xl">تجهیزات باما</span>

@@ -4,7 +4,7 @@ import HeaderTop from "./HeaderTop/HeaderTop";
 
 const Header = () => {
   return (
-    <header className=" bg-[#FFF8F5] pt-4 min-h-165 relative w-full overflow-hidden">
+    <header className=" bg-[#FFF8F5] pt-4 min-h-182 relative w-full overflow-hidden">
       <img
         src="/images/leaf.svg"
         alt="leaf"

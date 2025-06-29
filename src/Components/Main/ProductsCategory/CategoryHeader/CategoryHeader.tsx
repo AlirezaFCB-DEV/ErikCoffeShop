@@ -1,0 +1,26 @@
+import { BiSolidCoffeeBean } from "react-icons/bi";
+import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
+
+const CategoryHeader = () => {
+  return (
+    <section className="container flex justify-between w-fit items-center mx-auto">
+      <div className="flex items-center gap-4">
+        <BiSolidCoffeeBean className="text-primary text-7xl" />
+        <div className="leading-10">
+          <h2 className="font-morabba-bold text-3xl">دسته‌بندی‌محصولات</h2>
+          <p>از میان بهترین‌ ها ، بهترین هارا برای شما فراهم کردیم!</p>
+        </div>
+      </div>
+      <div className="flex gap-4">
+        <button className="category-btn group">
+          <BsChevronRight className="category-btn-icon" />
+        </button>
+        <button className="category-btn group">
+          <BsChevronLeft className="category-btn-icon" />
+        </button>
+      </div>
+    </section>
+  );
+};
+
+export default CategoryHeader;

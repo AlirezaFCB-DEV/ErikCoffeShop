@@ -3,7 +3,7 @@ import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 
 const CategoryHeader = () => {
   return (
-    <section className="container flex justify-between w-fit items-center mx-auto">
+    <section className="flex justify-between w-full items-center ">
       <div className="flex items-center gap-4">
         <BiSolidCoffeeBean className="text-primary text-7xl" />
         <div className="leading-10">

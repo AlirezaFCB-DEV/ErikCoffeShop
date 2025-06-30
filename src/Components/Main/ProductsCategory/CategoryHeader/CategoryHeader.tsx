@@ -1,5 +1,6 @@
 import { BiSolidCoffeeBean } from "react-icons/bi";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
+import Button from "../../../Button/Button";
 
 const CategoryHeader = () => {
   return (
@@ -12,12 +13,12 @@ const CategoryHeader = () => {
         </div>
       </div>
       <div className="flex gap-4">
-        <button className="category-btn group">
+        <Button>
           <BsChevronRight className="category-btn-icon" />
-        </button>
-        <button className="category-btn group">
+        </Button>
+        <Button>
           <BsChevronLeft className="category-btn-icon" />
-        </button>
+        </Button>
       </div>
     </section>
   );

@@ -1,5 +1,5 @@
 import ProductCategory from "./ProductsCategory/ProductsCategory";
-import SpecialOffs from "./SpecialOffs/SpecialOffs";
+import SpecialOffs from "./SpecialOffsContainer/SpecialOffsContainer";
 
 const Main = () => {
   return (

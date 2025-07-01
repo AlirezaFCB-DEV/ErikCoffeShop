@@ -1,9 +1,11 @@
 import ProductCategory from "./ProductsCategory/ProductsCategory";
+import SpecialOffs from "./SpecialOffs/SpecialOffs";
 
 const Main = () => {
   return (
-    <main className="flex flex-col gap-14">
+    <main className="container mx-auto flex flex-col gap-24">
       <ProductCategory />
+      <SpecialOffs></SpecialOffs>
     </main>
   );
 };

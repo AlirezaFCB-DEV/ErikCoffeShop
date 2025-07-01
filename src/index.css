@@ -56,6 +56,18 @@
   .category-btn-icon {
     @apply text-xl transition-colors group-hover:text-white;
   }
+
+  .special-offs-back{
+    @apply w-[90%] h-[568px]
+  }
+
+  .icons-parent {
+    @apply flex gap-18 items-start
+  }
+
+  .parent-icons-parent {
+    @apply flex flex-col gap-16
+  }
 }
 
 @keyframes move {

@@ -29,6 +29,7 @@
   --color-secondary: #f2e5da;
   --color-stroke: #e9e9e8;
   --color-txt: #28221e;
+  --color-sec-text: #9B9895;
   --color-white-20: #ffffff33;
   --font-morabba: morabba-regular;
   --font-morabba-bold: morabba-bold;
@@ -67,6 +68,10 @@
 
   .parent-icons-parent {
     @apply flex flex-col gap-16
+  }
+  
+  .special-offs-category-item-active {
+    @apply font-iran-yekan-bold text-lg text-primary border-b-2 border-primary
   }
 }
 

@@ -1,8 +1,12 @@
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import Button from "../../../Button/Button";
-import { specialOffsCategories } from "./SpecialOffsCategories";
+import { specialOffsCategories } from "./SpecialOffsCategories.ts";
+import SpecialOffsProduct from "./SpecialOffsProduct/SpecialOffsProduct";
+import { useState } from "react";
 
 const SpecialOffs = () => {
+  const [coffeeCategoryItems , setCoffeeCategoryItems] = useState([1, 2, 3, 4 , 5 , 6 , 7 , 8]);
+
   return (
     <div className="bg-white outline-[10px] outline-[#ffffff1a] drop-shadow-[#0000000D] drop-shadow-2xl w-[75%] h-[572px] absolute top-34 left-43.5 rounded-4xl px-18 py-8">
       <div className="flex gap-8 items-center justify-between px-10 border-b-stroke border-b-2">
@@ -18,17 +22,32 @@ const SpecialOffs = () => {
               <button className=" cursor-pointer group-hover:text-primary">
                 {item.title}
               </button>
-              <div className={`w-0 h-0.5 bg-primary group-hover:w-full transition-all absolute -bottom-0 ${item.active ? "hidden" : ""}`}></div>
+              <div
+                className={`w-0 h-0.5 bg-primary group-hover:w-full transition-all absolute -bottom-0 ${
+                  item.active ? "hidden" : ""
+                }`}
+              ></div>
             </li>
           ))}
         </ul>
       </div>
-      <div className="h-[75%] w-[86%] bottom-8  absolute">
+      <div className="h-[75%] w-[86%] bottom-8 absolute">
         <Button className="absolute -left-14 top-1/2 -translate-y-1/2">
           <BsChevronLeft className="category-btn-icon" />
         </Button>
 
-        <div></div>
+        <div className="flex flex-nowrap overflow-hidden h-full gap-6">
+          {coffeeCategoryItems.map(() => (
+            <SpecialOffsProduct
+              key={crypto.randomUUID()}
+              img="/images/Products/product1.png"
+              offPercent={50}
+              realPrice={2_500_000}
+              subTitle="دانه قهوه"
+              title="دانه قهوه باکسی برند"
+            />
+          ))}
+        </div>
 
         <Button className="absolute -right-14 top-1/2 -translate-y-1/2">
           <BsChevronRight className="category-btn-icon" />

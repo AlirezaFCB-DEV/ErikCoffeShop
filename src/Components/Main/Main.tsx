@@ -1,4 +1,5 @@
 import BannerPage from "./Banner/BannerPage";
+import BestSellerProducts from "./BestSellerProducts/BestSellerProducts";
 import ProductCategory from "./ProductsCategory/ProductsCategory";
 import SpecialOffsContainer from "./SpecialOffsContainer/SpecialOffsContainer";
 
@@ -8,6 +9,7 @@ const Main = () => {
       <ProductCategory />
       <SpecialOffsContainer />
       <BannerPage />
+      <BestSellerProducts />
     </main>
   );
 };

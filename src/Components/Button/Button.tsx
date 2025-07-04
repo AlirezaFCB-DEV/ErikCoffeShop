@@ -4,7 +4,7 @@ interface ButtonProps {
 }
 
 const Button = ({ children , className}: ButtonProps) => {
-  return <button className={`category-btn group ${className}`}>{children}</button>;
+  return <button className={className}>{children}</button>;
 };
 
 export default Button;

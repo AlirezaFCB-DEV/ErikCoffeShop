@@ -13,10 +13,10 @@ const CategoryHeader = () => {
         </div>
       </div>
       <div className="flex gap-4">
-        <Button>
+        <Button className="category-btn group">
           <BsChevronRight className="category-btn-icon" />
         </Button>
-        <Button>
+        <Button className="category-btn group">
           <BsChevronLeft className="category-btn-icon" />
         </Button>
       </div>

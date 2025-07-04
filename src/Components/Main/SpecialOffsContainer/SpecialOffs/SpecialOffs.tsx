@@ -1,7 +1,7 @@
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import Button from "../../../Button/Button";
 import { specialOffsCategories } from "./SpecialOffsCategories.ts";
-import SpecialOffsProduct from "./SpecialOffsProduct/SpecialOffsProduct";
+import Product from "../../../Product/Product.tsx";
 import { useState } from "react";
 
 const SpecialOffs = () => {
@@ -32,24 +32,25 @@ const SpecialOffs = () => {
         </ul>
       </div>
       <div className="h-[75%] w-[86%] bottom-8 absolute">
-        <Button className="absolute -left-14 top-1/2 -translate-y-1/2">
+        <Button className="category-btn absolute -left-14 top-1/2 ">
           <BsChevronLeft className="category-btn-icon" />
         </Button>
 
         <div className="flex flex-nowrap overflow-hidden h-full gap-6">
           {coffeeCategoryItems.map(() => (
-            <SpecialOffsProduct
+            <Product
               key={crypto.randomUUID()}
               img="/images/Products/product1.png"
               offPercent={50}
               realPrice={2_500_000}
               subTitle="دانه قهوه"
               title="دانه قهوه باکسی برند"
+              sizeClass="special-offs-product"
             />
           ))}
         </div>
 
-        <Button className="absolute -right-14 top-1/2 -translate-y-1/2">
+        <Button className="category-btn absolute -right-14 top-1/2 ">
           <BsChevronRight className="category-btn-icon" />
         </Button>
       </div>

@@ -1,7 +1,7 @@
 import { BiSolidCoffeeBean } from "react-icons/bi";
-import { BestSellerCategories } from "./BestSellerCategories";
+import { BestSellerCategories } from "./BestSellerCategoriesData";
 
-const BestSellerProducts = () => {
+const BestSellersCategories = () => {
   return (
     <section className="flex justify-around w-full items-center border-2 border-[#E9E9E8] rounded-full p-4 mx-auto">
       <div className="flex items-center gap-4">
@@ -37,4 +37,4 @@ const BestSellerProducts = () => {
   );
 };
 
-export default BestSellerProducts;
+export default BestSellersCategories;

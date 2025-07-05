@@ -25,7 +25,9 @@ const BestSellersProducts = () => {
           : productsArr.map((item) => <Product {...item} />)}
       </div>
       <Button className="bs-products-btn group">
-        <span className="text-xl group-hover:text-primary transition-colors">مشاهده بیشتر</span>
+        <span className="text-xl group-hover:text-primary transition-colors">
+          مشاهده بیشتر
+        </span>
         <FaArrowLeftLong className="text-2xl group-hover:text-primary transition-colors" />
       </Button>
     </div>

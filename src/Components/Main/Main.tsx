@@ -2,6 +2,7 @@ import BannerPage from "./Banner/BannerPage";
 import BestSellersContainer from "./BestSellersContainer/BestSellersContainer";
 import ProductCategory from "./ProductsCategory/ProductsCategory";
 import SpecialOffsContainer from "./SpecialOffsContainer/SpecialOffsContainer";
+import TrainingPageContainer from "./TrainingsPage/TrainingPageContainer";
 
 const Main = () => {
   return (
@@ -10,6 +11,7 @@ const Main = () => {
       <SpecialOffsContainer />
       <BannerPage />
       <BestSellersContainer />
+      <TrainingPageContainer />
     </main>
   );
 };

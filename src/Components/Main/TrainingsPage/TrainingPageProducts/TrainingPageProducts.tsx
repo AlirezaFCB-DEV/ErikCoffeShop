@@ -1,17 +1,16 @@
 import { FaArrowLeftLong } from "react-icons/fa6";
 import Button from "../../../Button/Button";
 import { TrainingProducts } from "./TrainingPageProductsData";
+import SPOffsAndTrainingWrapper from "../../../SPOffsAndTrainingWrapper/SPOffsAndTrainingWrapper";
 
 const TrainingPageProducts = () => {
   return (
-    <div className="w-full flex flex-col items-center gap-24 absolute top-30  px-18 py-8">
-      <div className="flex  justify-around ">
-        {TrainingProducts.length > 4
+    <div className="w-full flex flex-col items-center gap-24 absolute top-30  px-16 py-8">
+      <div className="flex  justify-between ">
+        {TrainingProducts.length > 3
           ? ""
           : TrainingProducts.map((item) => (
-              <div
-                className={`w-1/4 border-stroke bg-white border-2 py-4  px-4 flex flex-col  justify-between  select-none  cursor-pointer rounded-4xl outline-[10px] outline-[#ffffff1a] drop-shadow-[#0000000D] drop-shadow-2xl`}
-              >
+              <SPOffsAndTrainingWrapper className="w-1/3 border-stroke bg-white border-2 py-4  px-4 flex flex-col  justify-between  select-none  cursor-pointer rounded-4xl outline-[10px] outline-[#ffffff1a] drop-shadow-[#0000000D] drop-shadow-2xl">
                 <div className="flex  justify-center flex-col ">
                   <div className="flex justify-center">
                     <img
@@ -43,7 +42,7 @@ const TrainingPageProducts = () => {
                     </h3>
                   </div>
                 </div>
-              </div>
+              </SPOffsAndTrainingWrapper>
             ))}
       </div>
       <Button className="bs-products-btn group">

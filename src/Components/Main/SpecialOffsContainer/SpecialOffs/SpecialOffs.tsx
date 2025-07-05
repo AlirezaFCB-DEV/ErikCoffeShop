@@ -3,12 +3,15 @@ import Button from "../../../Button/Button";
 import { specialOffsCategories } from "./SpecialOffsCategories.ts";
 import Product from "../../../Product/Product.tsx";
 import { useState } from "react";
+import SPOffsAndTrainingWrapper from "../../../SPOffsAndTrainingWrapper/SPOffsAndTrainingWrapper.tsx";
 
 const SpecialOffs = () => {
-  const [coffeeCategoryItems , setCoffeeCategoryItems] = useState([1, 2, 3, 4 , 5 , 6 , 7 , 8]);
+  const [coffeeCategoryItems, setCoffeeCategoryItems] = useState([
+    1, 2, 3, 4, 5, 6, 7, 8,
+  ]);
 
   return (
-    <div className="bg-white outline-[10px] outline-[#ffffff1a] drop-shadow-[#0000000D] drop-shadow-2xl w-[75%] h-[572px] absolute top-34 left-43.5 rounded-4xl px-18 py-8">
+    <SPOffsAndTrainingWrapper className="bg-white outline-[10px] outline-[#ffffff1a] drop-shadow-[#0000000D] drop-shadow-2xl w-[75%] h-[572px] absolute top-34 left-43.5 rounded-4xl px-18 py-8">
       <div className="flex gap-8 items-center justify-between px-10 border-b-stroke border-b-2">
         <h3 className="font-iran-yekan-bold text-2xl">دسته‌بندی ها</h3>
         <ul className="flex gap-10 text-sec-text">
@@ -54,7 +57,7 @@ const SpecialOffs = () => {
           <BsChevronRight className="category-btn-icon" />
         </Button>
       </div>
-    </div>
+    </SPOffsAndTrainingWrapper>
   );
 };
 

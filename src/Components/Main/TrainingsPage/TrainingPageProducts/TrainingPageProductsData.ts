@@ -7,19 +7,19 @@ export interface TrainingItems {
 
 export const TrainingProducts: TrainingItems[] = [
   {
-    img: "/images/Products/product1.png",
+    img: "/images/TrainingImages/image1.png",
     text: "لورم ایپسوم متن ساختگی برای طراحان میباشد که با استفاده از آن متن تستی مینویسند!",
     button: "مشاهده بیشتر",
     date: "۱۹ اردیبهشت ۱۴۰۳",
   },
   {
-    img: "/images/Products/product1.png",
+    img: "/images/TrainingImages/image2.png",
     text: "لورم ایپسوم متن ساختگی برای طراحان میباشد که با استفاده از آن متن تستی مینویسند!",
     button: "مشاهده بیشتر",
     date: "۱۹ اردیبهشت ۱۴۰۳",
   },
   {
-    img: "/images/Products/product1.png",
+    img: "/images/TrainingImages/image3.png",
     text: "لورم ایپسوم متن ساختگی برای طراحان میباشد که با استفاده از آن متن تستی مینویسند!",
     button: "مشاهده بیشتر",
     date: "۱۹ اردیبهشت ۱۴۰۳",

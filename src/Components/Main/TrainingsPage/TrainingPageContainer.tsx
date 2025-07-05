@@ -4,9 +4,9 @@ import TrainingPageProducts from "./TrainingPageProducts/TrainingPageProducts";
 
 const TrainingPageContainer = () => {
   const icons: iconsType[] = [
-    { id: crypto.randomUUID(), src: "/images/BackIcons/icon1.svg" },
-    { id: crypto.randomUUID(), src: "/images/BackIcons/icon2.svg" },
-    { id: crypto.randomUUID(), src: "/images/BackIcons/icon3.svg" },
+    { id: crypto.randomUUID(), src: "/images/BackIcons/icon6.svg" },
+    { id: crypto.randomUUID(), src: "/images/BackIcons/icon4.svg" },
+    { id: crypto.randomUUID(), src: "/images/BackIcons/icon5.svg" },
   ];
 
   return (

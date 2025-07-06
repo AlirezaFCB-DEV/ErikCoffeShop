@@ -1,6 +1,7 @@
 import { FaArrowLeftLong } from "react-icons/fa6";
 import Button from "../../../Button/Button";
 import { TrainingProducts } from "./TrainingPageProductsData";
+// import TrainingPageProduct from "./TrainingPageProduct";
 
 const TrainingPageProducts = () => {
   return (

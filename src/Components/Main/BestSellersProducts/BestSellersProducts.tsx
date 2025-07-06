@@ -15,14 +15,13 @@ const BestSellersProducts = () => {
     }))
   );
 
-  console.log(productsArr);
 
   return (
     <div className="flex flex-col items-center gap-24">
       <div className="flex flex-wrap justify-between gap-y-10">
         {productsArr.length > 8
           ? ""
-          : productsArr.map((item) => <Product {...item} />)}
+          : productsArr.map((item) => <Product {...item}  key={crypto.randomUUID()}/>)}
       </div>
       <Button className="bs-products-btn group">
         <span className="text-xl group-hover:text-primary transition-colors">

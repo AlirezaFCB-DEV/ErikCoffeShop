@@ -85,6 +85,10 @@
   .bs-products-btn {
     @apply bg-primary text-white flex gap-16 items-center p-4 rounded-full cursor-pointer hover:bg-secondary transition-colors;
   }
+
+  .training-page {
+    @apply h-[426px]
+  }
 }
 
 @keyframes move {

@@ -4,13 +4,13 @@ import { TrainingProducts } from "./TrainingPageProductsData";
 
 const TrainingPageProducts = () => {
   return (
-    <div className="w-full flex flex-col items-center gap-24 absolute top-30  px-18 py-8">
+    <div className="w-full h-full flex flex-col items-center gap-24 absolute top-30  px-18 ">
       <div className="flex  justify-around ">
         {TrainingProducts.length > 4
           ? ""
           : TrainingProducts.map((item) => (
               <div
-                className={`w-1/4 border-stroke bg-white border-2 py-4  px-4 flex flex-col  justify-between  select-none  cursor-pointer rounded-4xl outline-[10px] outline-[#ffffff1a] drop-shadow-[#0000000D] drop-shadow-2xl`}
+                className={`w-1/4 border-stroke bg-white border-2   px-4 flex flex-col  justify-between  select-none  cursor-pointer rounded-4xl outline-[10px] outline-[#ffffff1a] drop-shadow-[#0000000D] drop-shadow-2xl`}
               >
                 <div className="flex  justify-center flex-col ">
                   <div className="flex justify-center">

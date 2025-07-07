@@ -60,3 +60,13 @@ and For DeActive Venv:
     deactivate
 ```
 </div>
+
+---
+### For Server Run Use This Command:
+<p style="background-color: #ffcccc; color: #d60000; padding: 8px; border-left: 4px solid #ff0000; border-radius: 4px;">
+  <strong>Note:</strong> For Running Server Required Active Venv
+</p>
+
+```Bash
+   python server.py
+```

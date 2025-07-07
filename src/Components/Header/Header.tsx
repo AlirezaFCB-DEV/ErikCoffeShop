@@ -4,7 +4,7 @@ import HeaderTop from "./HeaderTop/HeaderTop";
 
 const Header = () => {
   return (
-    <header className=" bg-[#FFF8F5] pt-4 min-h-182 relative w-full overflow-hidden">
+    <header className=" bg-[#FFF8F5] pt-4 min-h-182 relative w-full overflow-hidden  max-[630px]:min-h-202">
       <img
         src="/images/leaf.svg"
         alt="leaf"
@@ -14,7 +14,7 @@ const Header = () => {
         <HeaderTop />
         <HeaderMain />
       </div>
-      <div className="absolute bottom-0 left-0 w-fit overflow-hidden z-50">
+      <div className="absolute bottom-0 left-0 w-fit overflow-hidden z-50 ">
         <HeaderBottom />
       </div>
     </header>

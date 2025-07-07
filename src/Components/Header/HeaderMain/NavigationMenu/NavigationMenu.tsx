@@ -4,7 +4,7 @@ import { RiCircleFill } from "react-icons/ri";
 
 const NavigationMenu = () => {
   return (
-    <nav className="flex justify-between pl-4 pr-15 min-h-17 items-center rounded-full bg-txt text-white">
+    <nav className="flex justify-between pl-4 pr-15 min-h-17 items-center rounded-full bg-txt text-white max-[630px]:hidden">
       <ul className="flex items-center gap-10">
         <li>
           <a href="#" className="flex items-center gap-1">

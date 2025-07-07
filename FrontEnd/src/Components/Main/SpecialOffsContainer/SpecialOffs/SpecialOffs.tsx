@@ -1,0 +1,64 @@
+import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
+import Button from "../../../Button/Button.tsx";
+import { specialOffsCategories } from "./SpecialOffsCategories.ts";
+import Product from "../../../Product/Product.tsx";
+import { useState } from "react";
+import SPOffsAndTrainingWrapper from "../../../SPOffsAndTrainingWrapper/SPOffsAndTrainingWrapper.tsx";
+
+const SpecialOffs = () => {
+  const [coffeeCategoryItems, setCoffeeCategoryItems] = useState([
+    1, 2, 3, 4, 5, 6, 7, 8,
+  ]);
+
+  return (
+    <SPOffsAndTrainingWrapper className="bg-white outline-[10px] outline-[#ffffff1a] drop-shadow-[#0000000D] drop-shadow-2xl w-[75%] h-[572px] absolute top-34 left-43.5 rounded-4xl px-18 py-8">
+      <div className="flex gap-8 items-center justify-between px-10 border-b-stroke border-b-2">
+        <h3 className="font-iran-yekan-bold text-2xl">دسته‌بندی ها</h3>
+        <ul className="flex gap-10 text-sec-text">
+          {specialOffsCategories.map((item) => (
+            <li
+              key={item.id}
+              className={`${
+                item.active ? "special-offs-category-item-active" : ""
+              } py-2 group cursor-pointer relative`}
+            >
+              <button className=" cursor-pointer group-hover:text-primary">
+                {item.title}
+              </button>
+              <div
+                className={`w-0 h-0.5 bg-primary group-hover:w-full transition-all absolute -bottom-0 ${
+                  item.active ? "hidden" : ""
+                }`}
+              ></div>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div className="h-[75%] w-[86%] bottom-8 absolute">
+        <Button className="category-btn absolute -left-14 top-1/2 ">
+          <BsChevronLeft className="category-btn-icon" />
+        </Button>
+
+        <div className="flex flex-nowrap overflow-hidden h-full gap-6">
+          {coffeeCategoryItems.map(() => (
+            <Product
+              key={crypto.randomUUID()}
+              img="/images/Products/product1.png"
+              offPercent={50}
+              realPrice={2_500_000}
+              subTitle="دانه قهوه"
+              title="دانه قهوه باکسی برند"
+              sizeClass="special-offs-product"
+            />
+          ))}
+        </div>
+
+        <Button className="category-btn absolute -right-14 top-1/2 ">
+          <BsChevronRight className="category-btn-icon" />
+        </Button>
+      </div>
+    </SPOffsAndTrainingWrapper>
+  );
+};
+
+export default SpecialOffs;

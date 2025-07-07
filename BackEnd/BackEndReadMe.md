@@ -41,3 +41,22 @@ DELETE /admins/{id}    - حذف ادمین
 ```Bash
 GET /health - بررسی سلامت API
 ```
+---
+<div>
+For Developer Required Installed python3-venv and use this command :
+
+### linuxUsers : 
+```Bash 
+    source venv/bin/activate
+```
+
+### windowsUsers :
+```Bash
+    venv\Scripts\activate
+```
+
+and For DeActive Venv:
+```Bash
+    deactivate
+```
+</div>

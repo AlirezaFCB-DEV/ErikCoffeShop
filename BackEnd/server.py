@@ -130,6 +130,7 @@ class ErickCafeHandler(BaseHTTPRequestHandler):
             # Add timestamp
             data['created_at'] = datetime.now()
 
+
             # USERS Routes
             if path_parts[0] == "users":
                 # POST /users - Create new user

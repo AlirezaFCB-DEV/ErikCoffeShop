@@ -1,9 +1,9 @@
 import { FaArrowLeftLong } from "react-icons/fa6";
-import Button from "../../../Button/Button";
-import SPOffsAndTrainingWrapper from "../../../SPOffsAndTrainingWrapper/SPOffsAndTrainingWrapper";
-import type { TrainingItems } from "./TrainingPageProductsData";
+import Button from "../../../../Button/Button";
+import SPOffsAndTrainingWrapper from "../../../../SPOffsAndTrainingWrapper/SPOffsAndTrainingWrapper";
+import type { TrainingItems } from "../TrainingPageProductsData";
 
-const TrainingPageProduct = ({ img, button, date, text }: TrainingItems) => {
+const TrainingPageProduct = ({ img, date, text }: TrainingItems) => {
   return (
     <>
       <SPOffsAndTrainingWrapper className="w-1/3 hover:-translate-y-2 transition-transform group border-stroke bg-white border-2 py-4  px-3 flex flex-col  justify-between  select-none  cursor-pointer rounded-3xl outline-[10px] outline-[#ffffff1a] drop-shadow-[#0000000D] drop-shadow-2xl gap-y-12">

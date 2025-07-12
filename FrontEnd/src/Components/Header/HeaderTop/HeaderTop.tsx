@@ -30,14 +30,9 @@ const HeaderTop = () => {
             </span>
           </button>
         </a>
-        <a>
-          <button className="transition-colors cursor-pointer bg-primary p-2.5 border-2 border-primary rounded-full group-hover:bg-white max-[630px]:hidden">
+        <a className="group">
+          <button className="transition-colors cursor-pointer bg-primary p-2.5 border-2 border-primary rounded-full group-hover:bg-white ">
             <IoCart className="transition-colors text-2xl text-white group-hover:text-primary"></IoCart>
-          </button>
-        </a>
-        <a href="#" className="group">
-          <button className=" sm:collapse max-[630px]:visible transition-colors cursor-pointer bg-secondary p-2.5  rounded-full group-hover:bg-[##28221E]">
-            <LiaShoppingBasketSolid className="transition-colors text-2xl text-[#28221E] group-hover:text-secondary" />
           </button>
         </a>
       </div>

@@ -1,8 +1,6 @@
 import { ImLeaf } from "react-icons/im";
 import { BsTelephone } from "react-icons/bs";
 import { IoMdLocate } from "react-icons/io";
-import img1 from "../../../public/images/footer/img1.png";
-import img2 from "../../../public/images/footer/img2.png";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { FaWhatsapp } from "react-icons/fa";
 import { PiFacebookLogo } from "react-icons/pi";
@@ -54,8 +52,8 @@ const Footer = () => {
             </a>
           </div>
           <div className="flex justify-between">
-            <img src={img1} alt="عکس" className="w-[100px]" />
-            <img src={img2} alt="عکس" className="w-[100px]" />
+            <img src="/images/footer/img1.png" alt="عکس" className="w-[100px]" />
+            <img src="/images/footer/img2.png" alt="عکس" className="w-[100px]" />
           </div>
         </div>
       </footer>

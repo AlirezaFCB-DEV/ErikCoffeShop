@@ -9,7 +9,6 @@ interface BackCompProps {
 
 export const Back = ({ sizeClass, iconsImgs, title }: BackCompProps) => {
   const iconsReversed = [...iconsImgs].reverse();
-  console.log(iconsReversed);
 
   return (
     <div

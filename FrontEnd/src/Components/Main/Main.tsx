@@ -6,7 +6,7 @@ import TrainingPageContainer from "./TrainingsPage/TrainingPageContainer";
 
 const Main = () => {
   return (
-    <main className="container mx-auto flex flex-col gap-24">
+    <main className="container mx-auto flex flex-col gap-24 max-[630px]:overflow-hidden  max-[630px]:justify-items-stretch ">
       <ProductCategory />
       <SpecialOffsContainer />
       <BannerPage />

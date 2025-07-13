@@ -8,12 +8,12 @@ interface BackCompProps {
 }
 
 export const Back = ({ sizeClass, iconsImgs, title }: BackCompProps) => {
-  const iconsReversed = [...iconsImgs].reverse()
+  const iconsReversed = [...iconsImgs].reverse();
   console.log(iconsReversed);
 
   return (
     <div
-      className={`mx-auto ${sizeClass} bg-txt rounded-4xl flex justify-between px-16 py-14`}
+      className={`mx-auto ${sizeClass} bg-txt rounded-4xl flex justify-between px-16 py-14 max-[630px]:justify-center`}
     >
       <div className="parent-icons-parent">
         <div className="icons-parent">

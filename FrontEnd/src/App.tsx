@@ -1,13 +1,12 @@
-import Footer from "./Components/Footer/Footer.tsx";
-import Header from "./Components/Header/Header.tsx";
-import Main from "./Components/Main/Main.tsx";
+import { useRoutes } from "react-router-dom";
+import routes from "./Routes";
 
 const App = () => {
+  const router = useRoutes(routes)
+
   return (
     <>
-      <Header />
-      <Main />
-      <Footer />
+      {router}
     </>
   );
 };

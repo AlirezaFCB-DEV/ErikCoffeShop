@@ -1,6 +1,7 @@
 import HeaderBottom from "./HeaderBottom/HeaderBottom";
 import HeaderMain from "./HeaderMain/HeaderMain";
 import HeaderTop from "./HeaderTop/HeaderTop";
+import { IoCart } from "react-icons/io5";
 
 const Header = () => {
   return (
@@ -11,7 +12,9 @@ const Header = () => {
         className="absolute left-0 bottom-0 opacity-8"
       />
       <div className="container m-auto flex flex-col gap-8 relative ">
-        <HeaderTop />
+        <HeaderTop leftIconRoute="/cart">
+          <IoCart className="header-top-icon"></IoCart>
+        </HeaderTop>
         <HeaderMain />
       </div>
       <div className="absolute bottom-0 left-0 w-fit overflow-hidden z-50 ">

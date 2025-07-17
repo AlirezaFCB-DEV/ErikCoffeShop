@@ -1,5 +1,5 @@
 import HeaderMainContent from "./HeaderMainContent/HeaderMainContent";
-import NavigationMenu from "./NavigationMenu/NavigationMenu";
+import NavigationMenu from "../../NavigationMenu/NavigationMenu";
 
 const HeaderMain = () => {
   return (

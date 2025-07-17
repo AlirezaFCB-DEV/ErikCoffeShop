@@ -21,13 +21,13 @@ const NavigationMenu = () => {
           </ul>
         </li>
         <li>
-          <Link to="tutorials">آموزش ها</Link>
+          <Link to="/tutorials">آموزش ها</Link>
         </li>
         <li>
-          <Link to="about">درباره</Link>
+          <Link to="/about">درباره</Link>
         </li>
         <li>
-          <Link to="contact">تماس باما</Link>
+          <Link to="/contact">تماس باما</Link>
         </li>
       </ul>
       <div className="flex bg-white-20 p-2.5 rounded-full items-center gap-1">

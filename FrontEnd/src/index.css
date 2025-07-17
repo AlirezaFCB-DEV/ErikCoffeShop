@@ -90,6 +90,10 @@
   .training-page {
     @apply h-[426px]
   }
+
+  .header-top-icon {
+    @apply transition-colors text-2xl text-white group-hover:text-primary
+  }
 }
 
 @keyframes move {

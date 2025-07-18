@@ -94,6 +94,14 @@
   .header-top-icon {
     @apply transition-colors text-2xl text-white group-hover:text-primary
   }
+
+  .service-icon {
+    @apply text-2xl
+  }
+
+  .services-alignment {
+    @apply flex flex-col gap-4
+  }
 }
 
 @keyframes move {

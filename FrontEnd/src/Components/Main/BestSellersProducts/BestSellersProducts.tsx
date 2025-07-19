@@ -4,7 +4,7 @@ import Button from "../../Button/Button";
 import { FaArrowLeftLong } from "react-icons/fa6";
 
 const BestSellersProducts = () => {
-  const [productsArr, setProductsArray] = useState<ProductProps[]>(
+  const [productsArr] = useState<ProductProps[]>(
     Array.from({ length: 8 }, (_) => ({
       img: "/images/Products/product1.png",
       offPercent: 10,

@@ -6,7 +6,7 @@ import { useState } from "react";
 import SPOffsAndTrainingWrapper from "../../../SPOffsAndTrainingWrapper/SPOffsAndTrainingWrapper.tsx";
 
 const SpecialOffs = () => {
-  const [coffeeCategoryItems, setCoffeeCategoryItems] = useState([
+  const [coffeeCategoryItems] = useState([
     1, 2, 3, 4, 5, 6, 7, 8,
   ]);
 

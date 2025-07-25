@@ -7,7 +7,7 @@ import { PiFacebookLogo } from "react-icons/pi";
 
 const Footer = () => {
   return (
-    <div className="relative mt-92">
+    <div className="relative">
       <footer className="  text-white flex flex-col justify-center items-center text-center   bg-txt  w-full  px-2 py-8">
         <div className="flex flex-col justify-center items-center m-2">
           <h1 className="font-morabba-bold text-4xl  flex">

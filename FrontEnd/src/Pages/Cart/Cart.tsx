@@ -14,6 +14,7 @@ import Button from "../../Components/Button/Button";
 import { Link } from "react-router-dom";
 import Off_Percent from "../../Components/Off_Percent/Off_Percent";
 import { HiDotsHorizontal } from "react-icons/hi";
+import Footer from "../../Components/Footer/Footer";
 
 interface ProductCountBtns {
   button: React.ReactNode;
@@ -193,6 +194,7 @@ const Cart = () => {
           </div>
         </section>
       </div>
+      <Footer />
     </>
   );
 };

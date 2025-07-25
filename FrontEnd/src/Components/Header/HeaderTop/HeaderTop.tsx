@@ -28,11 +28,11 @@ const HeaderTop = ({ children, leftIconRoute }: HeaderTop) => {
       </div>
       <div className="flex items-center gap-3.5">
         <Link to="#" className="group max-[630px]:hidden">
-          <button className="transition-colors duration-200 group-hover:border-primary cursor-pointer py-2 pb-3 px-5 rounded-full flex justify-center items-center border-2">
+          <Link to="/login-register" className="transition-colors duration-200 group-hover:border-primary cursor-pointer py-2 pb-3 px-5 rounded-full flex justify-center items-center border-2">
             <span className="transition-colors duration-200 group-hover:text-primary">
               ورود/ثبت نام
             </span>
-          </button>
+          </Link>
         </Link>
         <Link to={leftIconRoute} className="group">
           <button className="transition-colors cursor-pointer bg-primary p-2.5 border-2 border-primary rounded-full group-hover:bg-white ">

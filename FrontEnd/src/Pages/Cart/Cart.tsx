@@ -4,7 +4,7 @@ import NavigationMenu from "../../Components/NavigationMenu/NavigationMenu";
 import Service from "../../Components/Service/Service";
 import { FaMoneyBill1Wave, FaTruckFast } from "react-icons/fa6";
 import { BsBoxFill } from "react-icons/bs";
-import { TfiHeadphoneAlt } from "react-icons/tfi";
+import { TfiFullscreen, TfiHeadphoneAlt } from "react-icons/tfi";
 import { MdMergeType, MdPhoneInTalk, MdWork } from "react-icons/md";
 import { GiMaterialsScience } from "react-icons/gi";
 import { RxValue } from "react-icons/rx";
@@ -12,6 +12,8 @@ import { GoPackage } from "react-icons/go";
 import { FaMinus, FaPlus } from "react-icons/fa";
 import Button from "../../Components/Button/Button";
 import { Link } from "react-router-dom";
+import Off_Percent from "../../Components/Off_Percent/Off_Percent";
+import { HiDotsHorizontal } from "react-icons/hi";
 
 interface ProductCountBtns {
   button: React.ReactNode;
@@ -35,7 +37,52 @@ const Cart = () => {
           <NavigationMenu />
         </section>
         <section className="flex gap-6 justify-between">
-          <div className="flex-1"></div>
+          <div className="flex-1 flex flex-col gap-6">
+            <div className="w-full flex-5 border-stroke border-2 rounded-xl p-4 relative">
+              <Off_Percent percent={20} />
+              <img
+                src="/images/Products/product1.png"
+                className="w-full max-h-100"
+                alt="محصول"
+              />
+              <button className="absolute right-4 bottom-4 bg-secondary cursor-pointer p-4 rounded-full">
+                <TfiFullscreen className="text-primary" />
+              </button>
+            </div>
+            <div className="flex flex-1 gap-4">
+              <div className="flex-1 flex items-center justify-center border-stroke border-2 rounded-lg cursor-pointer hover:border-primary transition-colors">
+                <HiDotsHorizontal className="text-3xl text-sec-text" />
+              </div>
+              <div className="flex-1 flex items-center justify-center border-stroke border-2 rounded-lg cursor-pointer hover:border-primary transition-colors">
+                <img
+                  src="/images/Products/product1.png"
+                  className="w-14 h-16"
+                  alt="محصول"
+                />
+              </div>
+              <div className="flex-1 flex items-center justify-center border-stroke border-2 rounded-lg cursor-pointer hover:border-primary transition-colors">
+                <img
+                  src="/images/Products/product1.png"
+                  className="w-14 h-16"
+                  alt="محصول"
+                />
+              </div>
+              <div className="flex-1 flex items-center justify-center border-stroke border-2 rounded-lg cursor-pointer hover:border-primary transition-colors">
+                <img
+                  src="/images/Products/product1.png"
+                  className="w-14 h-16"
+                  alt="محصول"
+                />
+              </div>
+              <div className="flex-1 flex items-center justify-center border-stroke border-2 rounded-lg cursor-pointer hover:border-primary transition-colors">
+                <img
+                  src="/images/Products/product1.png"
+                  className="w-14 h-16"
+                  alt="محصول"
+                />
+              </div>
+            </div>
+          </div>
           <div className="flex flex-1/6 flex-col justify-between items-start w-full">
             <div className="flex flex-col gap-6">
               <h2 className="font-iran-yekan-bold text-2xl">

@@ -9,7 +9,20 @@ import { MdMergeType, MdPhoneInTalk, MdWork } from "react-icons/md";
 import { GiMaterialsScience } from "react-icons/gi";
 import { RxValue } from "react-icons/rx";
 import { GoPackage } from "react-icons/go";
-import { FaChevronDown } from "react-icons/fa";
+import { FaMinus, FaPlus } from "react-icons/fa";
+import Button from "../../Components/Button/Button";
+import { Link } from "react-router-dom";
+
+interface ProductCountBtns {
+  button: React.ReactNode;
+}
+
+type CountBtnsArr = ProductCountBtns[];
+
+const countBtns: CountBtnsArr = [
+  { button: <FaMinus className="text-lg" /> },
+  { button: <FaPlus className="text-lg" /> },
+];
 
 const Cart = () => {
   return (
@@ -21,72 +34,88 @@ const Cart = () => {
           </HeaderTop>
           <NavigationMenu />
         </section>
-        <section className="flex justify-between">
-          <div></div>
-          <div>
-            <div>
-              <div>
-                <h1>دانه قهوه باکسی‌برند Boxillian</h1>
-                <p>دانه قهوه | برند‌:‌Boxillian</p>
-              </div>
-              <div>
-                <h3>ویژگی های محصول</h3>
-                <ul>
-                  <li>
-                    <GiMaterialsScience />
-                    <span>جنس محصول:</span>
-                    <span>پودر قهوه</span>
-                  </li>
-                  <li>
-                    <MdWork />
-                    <span>کارایی:</span>
-                    <span>استفاده روزمره</span>
-                  </li>
-                  <li>
-                    <RxValue />
-                    <span>اندازه:</span>
-                    <span>۵۰۰ گرم</span>
-                  </li>
-                  <li>
-                    <MdMergeType />
-                    <span>نوع محصول:</span>
-                    <span>روبوستا</span>
-                  </li>
-                  <li>
-                    <GoPackage />
-                    <span>نوع بسته بندی:</span>
-                    <span>کاغذی</span>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <h3>یک گزینه‌را انتخاب کنید:</h3>
-                <div>
-                  <span>مقدار:</span>
-                  <div>
-                    <span>۱کیلوگرم</span>
-                    <FaChevronDown />
-                    <div className="invisible"></div>
+        <section className="flex gap-6 justify-between">
+          <div className="flex-1"></div>
+          <div className="flex flex-1/6 flex-col justify-between items-start w-full">
+            <div className="flex flex-col gap-6">
+              <h2 className="font-iran-yekan-bold text-2xl">
+                دانه قهوه باکسی‌برند Boxillian
+              </h2>
+              <p className="text-sm text-sec-text">
+                دانه قهوه | برند‌:‌Boxillian
+              </p>
+            </div>
+            <div className="flex flex-col gap-4">
+              <h3 className="font-morabba-bold">ویژگی های محصول</h3>
+              <ul className="flex  flex-col gap-4 border-r-3 border-stroke pr-4 relative">
+                <li className="product-properties">
+                  <GiMaterialsScience className="text-xl" />
+                  <span className="text-sec-text text-sm">جنس محصول:</span>
+                  <span className="text-sm">پودر قهوه</span>
+                </li>
+                <li className="product-properties">
+                  <MdWork className="text-xl" />
+                  <span className="text-sec-text text-sm">کارایی:</span>
+                  <span className="text-sm">استفاده روزمره</span>
+                </li>
+                <li className="product-properties">
+                  <RxValue className="text-xl" />
+                  <span className="text-sec-text text-sm">اندازه:</span>
+                  <span className="text-sm">۵۰۰ گرم</span>
+                </li>
+                <li className="product-properties">
+                  <MdMergeType className="text-xl" />
+                  <span className="text-sec-text text-sm">نوع محصول:</span>
+                  <span className="text-sm">روبوستا</span>
+                </li>
+                <li className="product-properties">
+                  <GoPackage className="text-xl" />
+                  <span className="text-sec-text text-sm">نوع بسته بندی:</span>
+                  <span className="text-sm">کاغذی</span>
+                </li>
+                <div className="bg-primary absolute w-[3px] h-14 -right-[3px]"></div>
+              </ul>
+            </div>
+            <div className="flex flex-col gap-4">
+              <h3 className="font-morabba-bold">یک گزینه‌را انتخاب کنید:</h3>
+              <div className="flex gap-2 items-center">
+                <span className="text-sec-text ">مقدار:</span>
+                <div className="flex flex-col items-center border-stroke border-2 w-50 relative py-2.5 px-3 rounded-xl">
+                  <span className="text-2xl">۱</span>
+                  <div className="flex w-full justify-around">
+                    {countBtns.map((btn) => (
+                      <Button
+                        className="border-stroke border-2 py-1 px-3 rounded-lg cursor-pointer group hover:border-stone-700 transition-colors"
+                        key={crypto.randomUUID()}
+                      >
+                        {btn.button}
+                      </Button>
+                    ))}
                   </div>
                 </div>
               </div>
             </div>
-            <div>
-              <h2>
-                ۲۴۰،۰۰۰<span>تومان</span>
-              </h2>
 
-              <div>
-                <div>
-                  <button>+</button>
-                  <span>۱</span>
-                  <button>-</button>
-                </div>
-                <button>افزودن به سبد خرید</button>
+            <div className="flex w-full items-center bg-light-secondary p-4 rounded-2xl justify-between">
+              <div className="flex">
+                <Link
+                  to="buy"
+                  className="py-2 px-8 bg-primary rounded-xl text-white hover:bg-[#835648] transition-colors"
+                >
+                  اتمام خرید
+                </Link>
+              </div>
+
+              <div className="flex gap-2 items-center">
+                <span className="text-primary opacity-85">جمع سبد خرید:</span>
+                <h2 className="text-2xl text-primary font-iran-yekan-bold">
+                  <span className="text-md font-morabba">تومان</span>
+                  ۲۴۰،۰۰۰
+                </h2>
               </div>
             </div>
           </div>
-          <div className="services-alignment">
+          <div className="services-alignment flex-1">
             <div className="services-alignment">
               <Service title="شرایط ارسال" desc="حدود ۲ الی ۶ روز کاری">
                 <FaTruckFast className="service-icon" />

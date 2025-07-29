@@ -23,6 +23,11 @@
     font-family: ms-madi;
     src: url("/fonts/MsMadi-Regular.ttf");
   }
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 @theme {
@@ -106,6 +111,10 @@
 
   .product-properties {
     @apply flex items-center gap-1
+  }
+
+  .shipping_circles {
+    @apply absolute bg-white size-11 rounded-full
   }
 }
 

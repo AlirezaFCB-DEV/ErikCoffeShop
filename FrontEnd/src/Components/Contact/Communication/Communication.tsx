@@ -1,4 +1,4 @@
-import { MdPhoneInTalk } from "react-icons/md";
+
 import type CommunicationItems from "../../../Types/Communication.types";
 
 type CommunicationProps = CommunicationItems;

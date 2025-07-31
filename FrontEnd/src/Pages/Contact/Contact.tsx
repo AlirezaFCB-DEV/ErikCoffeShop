@@ -19,88 +19,106 @@ const Contact = () => {
         </header>
       </div>
 
-      <main className="border-stroke border-2 rounded-2xl">
-        <div className="container mx-auto">
-          <div className="flex">
-            <div className="flex-1">
-              <div>
-                <div>
-                  <h1>تماس با</h1>
-                  <span>قهوه اریک</span>
+      <main className="border-stroke border-2 rounded-2xl py-8">
+        <div className="container mx-auto flex flex-col gap-10">
+          <div className="flex gap-20">
+            <div className="flex-1 flex flex-col gap-8">
+              <div className="flex flex-col gap-8">
+                <div className="flex items-end gap-2 font-morabba-bold">
+                  <h1 className="text-6xl">تماس با</h1>
+                  <span className="text-2xl text-concat-icon">قهوه اریک</span>
                 </div>
-                <p>
-                  کاربر گرامی قهوه اریک؛ باعث افتخار ماست تا نظرات خود را با ما
-                  از طریق این فرم به اشتراک بگذارید. جهت اعلام شکایت، نظر،
-                  انتقاد و پیشنهاد در مورد سرویس‌دهی وب‌سایت می‌توانید با شماره
-                  تلفن 09394785984 تماس بگیرید یا از طریق فرم زیر موضوع موردنظر
-                  را با ما در میان بگذارید.
-                </p>
+                <div className="text-xl flex flex-col gap-4">
+                  <p>
+                    کاربر گرامی قهوه اریک؛ باعث افتخار ماست تا نظرات خود را با
+                    ما از طریق این فرم به اشتراک بگذارید.
+                  </p>
+                  <p className="w-150 text-md">
+                    جهت اعلام شکایت، نظر، انتقاد و پیشنهاد در مورد سرویس‌دهی
+                    وب‌سایت می‌توانید با شماره تلفن 09394785984 تماس بگیرید یا
+                    از طریق فرم زیر موضوع موردنظر را با ما در میان بگذارید.
+                  </p>
+                </div>
               </div>
-              <h2>تماس با قهوه اریک</h2>
-              <form action="#">
-                <Input_Box input_id="username" label_val="نام و نام‌خانوادگی">
-                  <input
-                    type="text"
-                    id="username"
-                    name="username"
-                    placeholder="نام و نام‌خانوادگی"
-                  />
-                </Input_Box>
-                <Input_Box input_id="subject" label_val="موضوع">
-                  <input
-                    type="text"
-                    id="subject"
-                    name="subject"
-                    placeholder="موضوع"
-                  />
-                </Input_Box>
-                <Input_Box input_id="user_email" label_val="ایمیل">
-                  <input
-                    type="email"
-                    id="user_email"
-                    name="email"
-                    placeholder="example@gmail.com"
-                  />
-                </Input_Box>
-                <Input_Box input_id="user_tel" label_val="شماره تلفن">
-                  <input
-                    type="tel"
-                    id="user_tel"
-                    name="tel"
-                    placeholder="۰۹۱۲۳۴۱۲۳۴"
-                  />
-                </Input_Box>
-                <Input_Box input_id="user_details" label_val="توضیحات">
-                  <textarea
-                    name="details"
-                    id="user_details"
-                    placeholder="چیزی بنویسید:"
-                  ></textarea>
-                </Input_Box>
+              <form action="#" className="flex flex-col gap-4">
+                <h2 className="text-stone-800 font-iran-yekan-bold text-xl">
+                  تماس با قهوه اریک
+                </h2>
+                <div className="flex flex-col gap-4">
+                  <Input_Box input_id="username" label_val="نام و نام‌خانوادگی">
+                    <input
+                      type="text"
+                      id="username"
+                      name="username"
+                      placeholder="نام و نام‌خانوادگی"
+                      className="contact_form_inp"
+                    />
+                  </Input_Box>
+                  <Input_Box input_id="subject" label_val="موضوع">
+                    <input
+                      type="text"
+                      id="subject"
+                      name="subject"
+                      placeholder="موضوع"
+                      className="contact_form_inp"
+                    />
+                  </Input_Box>
+                  <Input_Box input_id="user_email" label_val="ایمیل">
+                    <input
+                      type="email"
+                      id="user_email"
+                      name="email"
+                      placeholder="example@gmail.com"
+                      className="contact_form_inp"
+                    />
+                  </Input_Box>
+                  <Input_Box input_id="user_tel" label_val="شماره تلفن">
+                    <input
+                      type="tel"
+                      id="user_tel"
+                      name="tel"
+                      placeholder="۰۹۱۲۳۴۱۲۳۴"
+                      className="contact_form_inp"
+                    />
+                  </Input_Box>
+                  <Input_Box input_id="user_details" label_val="توضیحات">
+                    <textarea
+                      name="details"
+                      id="user_details"
+                      placeholder="چیزی بنویسید:"
+                      className="contact_form_inp min-h-50"
+                    ></textarea>
+                  </Input_Box>
+                </div>
               </form>
             </div>
             <div className="flex-1">
               <img src="/images/virtual-assistant-1.png" alt="تماس با ما" />
 
-              <div>
-                <h5>راه های ارتباطی</h5>
+              <div className="flex flex-col gap-4">
+                <h5 className="text-3xl">راه های ارتباطی</h5>
 
                 <Communication
                   title="تلفن پشتیبانی"
-                  title_icon={<MdPhoneInTalk />}
+                  title_icon={<MdPhoneInTalk className="communication_icon" />}
                 >
-                  <span>۰۲۱-۵۵۸۱۱۲۴۲</span>
-                  <span>۰۹۳۹۴۷۸۵۹۸۴</span>
-                  <span>۰۹۹۰۹۲۹۶۴۱۲</span>
+                  <span className="communication_children">۰۲۱-۵۵۸۱۱۲۴۲</span>
+                  <span className="communication_children">۰۹۳۹۴۷۸۵۹۸۴</span>
+                  <span className="communication_children">۰۹۹۰۹۲۹۶۴۱۲</span>
                 </Communication>
-                <Communication title="ایمیل" title_icon={<MdEmail />}>
-                  <span>info@erick.cafe</span>
+                <Communication
+                  title="ایمیل"
+                  title_icon={<MdEmail className="communication_icon" />}
+                >
+                  <span className="communication_children">info@erick.cafe</span>
                 </Communication>
                 <Communication
                   title="دفتر مرکزی تهران"
-                  title_icon={<FaMapLocationDot />}
+                  title_icon={
+                    <FaMapLocationDot className="communication_icon" />
+                  }
                 >
-                  <span>
+                  <span className="communication_children">
                     بازار تهران،چهارراه سیروس ابتدای پانزده خرداد غربی،کوچه
                     غفاری سرپولک پلاک 148
                   </span>

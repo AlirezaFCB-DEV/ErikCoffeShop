@@ -6,8 +6,8 @@ interface Input_Box_Props {
 
 const Input_Box = ({ label_val , input_id , children}: Input_Box_Props) => {
   return (
-    <div>
-          <label htmlFor={input_id}>{label_val}</label>
+    <div className="flex flex-col gap-4">
+          <label  className="cursor-pointer" htmlFor={input_id}>{label_val}</label>
           {children}
     </div>
   );

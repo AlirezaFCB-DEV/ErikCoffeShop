@@ -2,7 +2,7 @@ import BannerPage from "./Banner/BannerPage";
 import BestSellersContainer from "./BestSellersContainer/BestSellersContainer";
 import ProductCategory from "./ProductsCategory/ProductsCategory";
 import SpecialOffsContainer from "./SpecialOffsContainer/SpecialOffsContainer";
-import TrainingPageContainer from "./TrainingsPage/TrainingPageContainer";
+import Training_Section from "./Training_Section/Training_Section";
 
 const Home_Main = () => {
   return (
@@ -11,7 +11,7 @@ const Home_Main = () => {
       <SpecialOffsContainer />
       <BannerPage />
       <BestSellersContainer />
-      <TrainingPageContainer />
+      <Training_Section />
     </main>
   );
 };

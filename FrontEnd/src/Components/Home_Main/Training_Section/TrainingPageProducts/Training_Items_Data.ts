@@ -1,10 +1,10 @@
-export interface TrainingItems {
+export interface TrainingItemsProps {
   img: string;
   text: string;
   date: string;
 }
 
-export const TrainingProducts: TrainingItems[] = [
+export const TrainingItems: TrainingItemsProps[] = [
   {
     img: "/images/TrainingImages/image1.png",
     text: "لورم ایپسوم متن ساختگی برای طراحان میباشد که با استفاده از آن متن تستی مینویسند!",

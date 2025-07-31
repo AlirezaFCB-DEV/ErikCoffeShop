@@ -1,16 +1,16 @@
 import { FaArrowLeftLong } from "react-icons/fa6";
 import Button from "../../../Button/Button";
-import { TrainingProducts } from "./TrainingPageProductsData";
-import TrainingPageProduct from "./TrainingPageProduct/TrainingPageProduct";
+import { TrainingItems } from "./Training_Items_Data";
+import Training_Item from "./Training_Item/Training_Item";
 
-const TrainingPageProducts = () => {
+const Training_Items = () => {
   return (
     <div className="w-full h-full flex flex-col items-center gap-24 absolute top-30  px-16 ">
       <div className="flex gap-8">
-        {TrainingProducts.length > 3
+        {TrainingItems.length > 3
           ? ""
-          : TrainingProducts.map((item) => (
-            <TrainingPageProduct {...item} key={crypto.randomUUID()} />
+          : TrainingItems.map((item) => (
+              <Training_Item {...item} key={crypto.randomUUID()} />
             ))}
       </div>
       <Button className="bs-products-btn group">
@@ -22,4 +22,4 @@ const TrainingPageProducts = () => {
     </div>
   );
 };
-export default TrainingPageProducts;
+export default Training_Items;

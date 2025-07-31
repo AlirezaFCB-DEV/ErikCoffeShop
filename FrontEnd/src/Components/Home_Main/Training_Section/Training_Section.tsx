@@ -1,8 +1,8 @@
 import { Back } from "../../Back/Back";
 import type { iconsType } from "../../Back/BackIconsComp/Icons.types";
-import TrainingPageProducts from "./TrainingPageProducts/TrainingPageProducts";
+import Training_Items from "./TrainingPageProducts/TrainingPageProducts";
 
-const TrainingPageContainer = () => {
+const Training_Section = () => {
   const icons: iconsType[] = [
     { id: crypto.randomUUID(), src: "/images/BackIcons/icon6.svg" },
     { id: crypto.randomUUID(), src: "/images/BackIcons/icon4.svg" },
@@ -18,9 +18,9 @@ const TrainingPageContainer = () => {
         
       ></Back>
 
-      <TrainingPageProducts />
+      <Training_Items />
     </section>
   );
 };
 
-export default TrainingPageContainer;
+export default Training_Section;

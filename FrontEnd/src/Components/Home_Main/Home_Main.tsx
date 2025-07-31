@@ -6,7 +6,7 @@ import Training_Section from "./Training_Section/Training_Section";
 
 const Home_Main = () => {
   return (
-    <main className="container mx-auto flex flex-col gap-24 max-[630px]:overflow-hidden  max-[630px]:justify-items-stretch pb-92 ">
+    <main className="container flex flex-col gap-24 max-[630px]:overflow-hidden  max-[630px]:justify-items-stretch pb-92 ">
       <ProductCategory />
       <SpecialOffsContainer />
       <BannerPage />

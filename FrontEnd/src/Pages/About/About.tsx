@@ -1,18 +1,11 @@
-import { IoHome } from "react-icons/io5";
-import HeaderTop from "../../Components/Header/HeaderTop/HeaderTop";
-import NavigationMenu from "../../Components/NavigationMenu/NavigationMenu";
 import Footer from "../../Components/Footer/Footer";
+import Short_Header from "../../Components/Short_Header/Short_Header";
 
 const About = () => {
   return (
     <>
-      <div className="container mx-auto flex flex-col">
-        <header className="flex flex-col gap-8 mt-8">
-          <HeaderTop leftIconRoute="/">
-            <IoHome className="header-top-icon" />
-          </HeaderTop>
-          <NavigationMenu />
-        </header>
+      <div className="container flex flex-col">
+        <Short_Header />
         <main className="flex items-center gap-16">
           <div className="flex-2 font-iran-yekan text-lg">
             <div className="flex font-iran-yekan-bold text-stone-600">

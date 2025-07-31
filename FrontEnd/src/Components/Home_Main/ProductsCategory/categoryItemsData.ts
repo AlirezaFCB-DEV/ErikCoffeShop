@@ -1,4 +1,4 @@
-import type { CategoryItemsType } from "./CategoryItemType.types";
+import type { CategoryItemsType } from "../../../Types/CategoryItemType.types";
 
 const categoryItemsData: CategoryItemsType[] = [
   {

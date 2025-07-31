@@ -65,7 +65,7 @@
   }
 
   .special-offs-product {
-    @apply min-w-[280px] max-w-[280px];
+    @apply min-w-[310px] max-w-[310px] flex-1;
   }
 
   .best-sellers-products {

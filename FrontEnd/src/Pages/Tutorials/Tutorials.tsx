@@ -1,7 +1,16 @@
+import Footer from "../../Components/Footer/Footer";
+import Short_Header from "../../Components/Short_Header/Short_Header";
+
 const Tutorials = () => {
   return (
-    <div>Tutorials</div>
-  )
-}
+    <>
+      <div className="container">
+        <Short_Header />
+      </div>
 
-export default Tutorials
+      <Footer />
+    </>
+  );
+};
+
+export default Tutorials;

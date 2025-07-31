@@ -11,7 +11,7 @@ const Header = () => {
         alt="leaf"
         className="absolute left-0 bottom-0 opacity-8"
       />
-      <div className="container m-auto flex flex-col gap-8 relative ">
+      <div className="container flex flex-col gap-8 relative ">
         <HeaderTop leftIconRoute="/cart">
           <IoCart className="header-top-icon"></IoCart>
         </HeaderTop>

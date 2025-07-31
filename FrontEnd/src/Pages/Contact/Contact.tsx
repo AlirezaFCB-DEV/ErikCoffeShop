@@ -6,17 +6,13 @@ import { MdEmail, MdPhoneInTalk } from "react-icons/md";
 import Communication from "../../Components/Contact/Communication/Communication";
 import { FaMapLocationDot } from "react-icons/fa6";
 import Input_Box from "../../Components/Contact/Input_Box/Input_Box";
+import Short_Header from "../../Components/Short_Header/Short_Header";
 
 const Contact = () => {
   return (
     <>
-      <div className="container mx-auto">
-        <header className="flex gap-6 flex-col mt-6">
-          <HeaderTop leftIconRoute="/">
-            <IoHome className="header-top-icon"></IoHome>
-          </HeaderTop>
-          <NavigationMenu />
-        </header>
+      <div className="container">
+        <Short_Header />
       </div>
 
       <main className="border-stroke border-2 rounded-2xl py-8">
@@ -110,7 +106,9 @@ const Contact = () => {
                   title="ایمیل"
                   title_icon={<MdEmail className="communication_icon" />}
                 >
-                  <span className="communication_children">info@erick.cafe</span>
+                  <span className="communication_children">
+                    info@erick.cafe
+                  </span>
                 </Communication>
                 <Communication
                   title="دفتر مرکزی تهران"

@@ -1,16 +1,7 @@
-import { IoHome } from "react-icons/io5";
-import HeaderTop from "../../Header/HeaderTop/HeaderTop";
-import NavigationMenu from "../../NavigationMenu/NavigationMenu";
+import Short_Header from "../../Short_Header/Short_Header";
 
 const Cart_Header = () => {
-  return (
-    <header className="flex flex-col gap-8 relative">
-      <HeaderTop leftIconRoute="/">
-        <IoHome className="header-top-icon" />
-      </HeaderTop>
-      <NavigationMenu />
-    </header>
-  );
+  return <Short_Header />;
 };
 
 export default Cart_Header;

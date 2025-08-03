@@ -29,7 +29,7 @@ const HeaderTop = ({ children, leftIconRoute }: HeaderTop) => {
       <div className="flex items-center gap-3.5">
         <Link
           to="/login-register"
-          className="transition-colors duration-200 group-hover:border-primary cursor-pointer py-2 pb-3 px-5 rounded-full flex justify-center items-center border-2"
+          className="transition-colors duration-200 group hover:border-primary cursor-pointer py-2 pb-3 px-5 rounded-full flex justify-center items-center border-2"
         >
           <span className="transition-colors duration-200 group-hover:text-primary">
             ورود/ثبت نام

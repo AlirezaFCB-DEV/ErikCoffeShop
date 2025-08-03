@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-
-=======
->>>>>>> c6da390 (feat : style concat page)
 import type CommunicationItems from "../../../Types/Communication.types";
 
 type CommunicationProps = CommunicationItems;

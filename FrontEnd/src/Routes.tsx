@@ -4,7 +4,7 @@ import Cms from "./Pages/Cms/Cms";
 import Contact from "./Pages/Contact/Contact";
 import Home from "./Pages/Home/Home";
 import Products from "./Pages/Products/Products";
-import Tutorials from "./Pages/Tutorials/Tutorials";
+import Tutorials from "./Pages/Articles/Tutorials";
 import User from "./Pages/User/User";
 
 interface RoutesProps {

@@ -129,6 +129,10 @@
   .communication_children {
     @apply text-lg
   }
+
+  .tutorial_page_shadow {
+    @apply shadow-[0px_0px_5px_0px] shadow-[#0000001a] 
+  }
 }
 
 @keyframes move {

@@ -4,6 +4,7 @@ import Communication from "../../Components/Contact/Communication/Communication"
 import { FaMapLocationDot } from "react-icons/fa6";
 import Input_Box from "../../Components/Contact/Input_Box/Input_Box";
 import Short_Header from "../../Components/Short_Header/Short_Header";
+import Button from "../../Components/Button/Button";
 
 const Contact = () => {
   return (
@@ -82,6 +83,9 @@ const Contact = () => {
                       className="contact_form_inp min-h-50"
                     ></textarea>
                   </Input_Box>
+                  <Button type="submit" className="bg-primary p-4 rounded-2xl text-xl text-white cursor-pointer hover:scale-95 transition-transform">
+                      ارسال
+                  </Button>
                 </div>
               </form>
             </div>

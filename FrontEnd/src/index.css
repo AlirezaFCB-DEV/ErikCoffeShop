@@ -133,6 +133,23 @@
   .tutorial_page_shadow {
     @apply shadow-[0px_0px_5px_0px] shadow-[#0000001a] 
   }
+
+  .nav_menu_items { 
+    @apply flex items-center h-full
+  }
+
+
+  .drop_down_main_category {
+    @apply flex items-center gap-2 flex-1 border-b-2 border-stroke p-3 last:border-none cursor-pointer hover:bg-primary hover:text-white
+  }
+
+  .drop_down_main_category_icon_parent {
+    @apply bg-secondary p-3 rounded-full
+  }
+
+  .drop_down_main_category_icon {
+    @apply size-8 object-cover
+  }
 }
 
 @keyframes move {

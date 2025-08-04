@@ -1,6 +1,3 @@
-import { IoHome } from "react-icons/io5";
-import HeaderTop from "../../Components/Header/HeaderTop/HeaderTop";
-import NavigationMenu from "../../Components/NavigationMenu/NavigationMenu";
 import Footer from "../../Components/Footer/Footer";
 import { MdEmail, MdPhoneInTalk } from "react-icons/md";
 import Communication from "../../Components/Contact/Communication/Communication";

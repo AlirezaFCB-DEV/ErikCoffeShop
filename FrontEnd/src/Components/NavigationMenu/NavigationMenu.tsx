@@ -16,7 +16,7 @@ const NavigationMenu = () => {
         </li>
         <li className="nav_menu_items gap-0.5 group">
           لیست محصولات
-          <IoIosArrowDown></IoIosArrowDown>
+          <IoIosArrowDown className="rotate-180 group-hover:rotate-0 transition-all duration-300"></IoIosArrowDown>
           <Drop_Down />
         </li>
         <li className="nav_menu_items">

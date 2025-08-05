@@ -63,11 +63,11 @@
   }
 
   .special-offs-back {
-    @apply w-[90%] h-[520px];
+    @apply w-full h-[520px];
   }
 
   .special-offs-product {
-    @apply min-w-[350px] max-w-[350px] flex-1 max-xl:min-w-[229px] max-xl:max-w-[229px];
+    @apply min-w-[270px] max-w-[270px] flex-1 max-2xl:min-w-[300px] max-2xl:max-w-[300px] max-xl:min-w-[229px] max-xl:max-w-[229px];
   }
 
   .best-sellers-products {

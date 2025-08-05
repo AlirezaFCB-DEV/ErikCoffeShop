@@ -17,9 +17,9 @@ const HeaderBottom = () => {
   const doubleArr: imgArrType[] = [...imgArr, ...duplicate_arr];
 
   return (
-    <div className="flex items-center p-4 bg-secondary w-fit gap-24  h-16 move    max-[630px]:h-8">
+    <div className="flex items-center p-4 bg-secondary w-fit gap-24  h-16 move  max-xl:h-12">
       {doubleArr.map((item: imgArrType) => (
-        <img key={item.id} src="/images/image 6.svg" alt="تبلیغ" />
+        <img key={item.id} src="/images/image 6.svg" alt="تبلیغ"  className="max-xl:h-5"/>
       ))}
     </div>
   );

@@ -6,7 +6,7 @@ import Drop_Down from "./Drop_Down/Drop_Down";
 
 const NavigationMenu = () => {
   return (
-    <nav className="w-full flex justify-between pl-4 pr-15 h-17 rounded-full bg-txt text-white max-[630px]:hidden relative">
+    <nav className="w-full flex justify-between pl-4 pr-15 h-17 rounded-full bg-txt text-white max-xl:text-sm relative">
       <ul className="flex gap-10">
         <li className="nav_menu_items">
           <Link to="/" className="flex items-center gap-1">
@@ -32,7 +32,7 @@ const NavigationMenu = () => {
       <div className="h-full flex items-center">
         <div className="flex bg-white-20 p-2.5 rounded-full items-center gap-1">
           <span className="text-sm mt-0.5">Erick.Cafe</span>
-          <FaInstagram className="text-2xl" />
+          <FaInstagram className="text-2xl max-xl:text-xl" />
         </div>
       </div>
     </nav>

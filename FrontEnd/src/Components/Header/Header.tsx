@@ -9,7 +9,7 @@ const Header = () => {
       <img
         src="/images/leaf.svg"
         alt="leaf"
-        className="absolute left-0 bottom-0 opacity-8"
+        className="absolute left-0 bottom-0 opacity-8 max-xl:w-20"
       />
       <div className="container flex flex-col gap-8 relative ">
         <HeaderTop leftIconRoute="/cart">

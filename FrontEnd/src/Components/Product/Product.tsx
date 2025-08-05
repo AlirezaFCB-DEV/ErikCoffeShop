@@ -21,7 +21,7 @@ const Product = ({
 
   return (
     <div
-      className={`relative border-stroke border-2 py-4 px-6 ${sizeClass} flex flex-col  justify-between rounded-2xl select-none hover:border-primary group transition-colors cursor-pointer`}
+      className={` relative border-stroke border-2 py-4 px-6 ${sizeClass} flex flex-col  justify-between rounded-2xl select-none hover:border-primary group transition-colors cursor-pointer`}
     >
       <Off_Percent percent={offPercent} />
 

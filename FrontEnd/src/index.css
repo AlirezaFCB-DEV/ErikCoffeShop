@@ -55,19 +55,19 @@
   }
 
   .category-btn {
-    @apply p-2 rounded-xl bg-secondary flex items-center justify-center cursor-pointer  transition-colors hover:bg-primary -translate-y-1/2;
+    @apply p-2 rounded-xl bg-secondary flex items-center justify-center cursor-pointer  transition-colors hover:bg-primary -translate-y-1/2 z-10;
   }
 
   .category-btn-icon {
-    @apply text-xl transition-colors group-hover:text-white;
+    @apply text-xl transition-colors group-hover:text-white ;
   }
 
   .special-offs-back {
-    @apply w-[90%] h-[568px];
+    @apply w-[90%] h-[520px];
   }
 
   .special-offs-product {
-    @apply min-w-[310px] max-w-[310px] flex-1;
+    @apply min-w-[350px] max-w-[350px] flex-1 max-xl:min-w-[229px] max-xl:max-w-[229px];
   }
 
   .best-sellers-products {
@@ -125,30 +125,29 @@
   .communication_icon {
     @apply text-3xl text-concat-icon;
   }
-  
+
   .communication_children {
-    @apply text-lg
+    @apply text-lg;
   }
 
   .tutorial_page_shadow {
-    @apply shadow-[0px_0px_5px_0px] shadow-[#0000001a] 
+    @apply shadow-[0px_0px_5px_0px] shadow-[#0000001a];
   }
 
-  .nav_menu_items { 
-    @apply flex items-center h-full
+  .nav_menu_items {
+    @apply flex items-center h-full;
   }
-
 
   .drop_down_main_category {
-    @apply flex items-center gap-2 flex-1 border-b-2 border-stroke p-3 last:border-none cursor-pointer hover:bg-primary hover:text-white
+    @apply flex items-center gap-2 flex-1 border-b-2 border-stroke p-3 last:border-none cursor-pointer hover:bg-primary hover:text-white;
   }
 
   .drop_down_main_category_icon_parent {
-    @apply bg-secondary p-3 rounded-full
+    @apply bg-secondary p-3 rounded-full;
   }
 
   .drop_down_main_category_icon {
-    @apply size-8 object-cover
+    @apply size-8 object-cover;
   }
 }
 

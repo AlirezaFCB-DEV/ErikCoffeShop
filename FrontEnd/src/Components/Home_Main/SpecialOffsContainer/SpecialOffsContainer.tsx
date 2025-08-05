@@ -10,7 +10,7 @@ const SpecialOffsContainer = () => {
   ];
 
   return (
-    <section className="relative max-[630px]:my-20 max-[630px]:flex max-[630px]:flex-col max-[630px]:justify-center max-[630px]:items-center max-[630px]:text-center">
+    <section className="relative ">
       <Back
         title="تخفیفات ویژه"
         sizeClass="special-offs-back"

@@ -18,7 +18,7 @@ const BestSellersProducts = () => {
 
   return (
     <div className="flex flex-col items-center gap-24">
-      <div className="flex flex-wrap justify-between gap-y-10">
+      <div className="flex flex-wrap justify-center gap-23 max-2xl:gap-10">
         {productsArr.length > 8
           ? ""
           : productsArr.map((item) => <Product {...item}  key={crypto.randomUUID()}/>)}

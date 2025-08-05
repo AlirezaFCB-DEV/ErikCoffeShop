@@ -6,7 +6,7 @@ const HeaderMainContent = () => {
     <div className="flex gap-6 text-white pb-20 ">
       <div className="bg-txt flex-1 p-12 rounded-2xl flex flex-col justify-center gap-8 max-xl:items-center max-xl:px-8 max-xl:gap-12">
         <div className="flex flex-col gap-3 max-xl:items-center">
-          <span className="font-ms-madi text-2xl max-[630px]:text-xl">
+          <span className="font-ms-madi text-2xl">
             ErickCoffee
           </span>
           <h1 className="font-morabba-bold text-6xl max-xl:text-4xl relative flex max-[630px]:text-3xl">

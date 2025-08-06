@@ -11,9 +11,9 @@ const BestSellersCategories = () => {
           <p className="max-2xl:text-sm text-nowrap">پرفروش ترین محصولات اریک کافه</p>
         </div>
       </div>
-      <div className="flex gap-8 items-center justify-between py-5 px-10 bg-stroke rounded-full max-2xl:py-3 max-2xl:px-5 max-xl:w-full">
+      <div className="flex gap-8 items-center justify-between py-5 px-10 bg-stroke rounded-full max-2xl:py-3 max-2xl:px-5 max-xl:w-full max-lg:gap-8">
         <h3 className="font-iran-yekan-bold text-base bg-[#FFFFFF] rounded-full p-1.5 text-nowrap">دسته‌بندی ها</h3>
-        <ul className="flex gap-10 text-sec-text max-2xl:gap-8">
+        <ul className="flex gap-10 text-sec-text max-2xl:gap-8 max-lg:overflow-scroll max-lg:gap-15">
           {BestSellerCategories.map((item) => (
             <li
               key={item.id}

@@ -6,7 +6,7 @@ import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 
 const Training_Items = () => {
   return (
-    <div className="w-full h-full flex flex-col items-center gap-24 absolute top-30 px-16">
+    <div className="w-full h-full flex flex-col items-center gap-24 absolute top-30 px-16 max-lg:px-20 max-lg:gap-16">
       <div className="flex gap-8 max-xl:overflow-x-scroll min-h-max py-6 px-3  max-xl:w-[100%] ">
         {TrainingItems.length > 3
           ? ""

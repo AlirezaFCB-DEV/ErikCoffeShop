@@ -11,13 +11,13 @@ const SpecialOffs = () => {
   return (
     <SPOffsAndTrainingWrapper className="bg-white outline-[10px] outline-[#ffffff1a] drop-shadow-[#0000000D] drop-shadow-2xl w-[85%] h-[572px] absolute top-34 left-1/2 -translate-x-1/2 rounded-4xl px-18 py-8  max-xl:w-4/5 max-xl:px-10 max-xl:h-[510px]">
 
-      <div className="flex gap-20 items-center px-10 border-b-stroke border-b-2 max-2xl:gap-10 max-xl:gap-6 max-xl:px-5">
+      <div className="flex gap-20 items-center px-10 border-b-stroke border-b-2 max-2xl:gap-10 max-xl:gap-6 max-xl:px-5 relative">
 
         <h3 className="font-iran-yekan-bold text-xl text-nowrap max-2xl:text-lg  max-xl:text-xl max-xl:text-nowrap">
           دسته‌بندی ها
         </h3>
 
-        <ul className="flex items-center gap-20 text-sec-text max-2xl:gap-8 max-xl:gap-6">
+        <ul className="flex items-center gap-20 text-sec-text max-2xl:gap-8 max-xl:gap-6 max-lg:overflow-scroll">
           {specialOffsCategories.map((item) => (
             <li
               key={item.id}
@@ -36,6 +36,13 @@ const SpecialOffs = () => {
             </li>
           ))}
         </ul>
+
+        <Button className="absolute left-1 text-xl">
+          <BsChevronLeft />
+        </Button>
+        <Button className="absolute right-36 text-xl">
+          <BsChevronRight />
+        </Button>
       </div>
       <div className="h-[75%] w-[90%] left-1/2 -translate-x-1/2 max-xl:w-[90%] bottom-8 absolute">
         <Button className="category-btn absolute -left-4 top-1/2  max-xl:-left-3">

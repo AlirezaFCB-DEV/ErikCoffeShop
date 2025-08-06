@@ -22,7 +22,7 @@ export const Back = ({ sizeClass, iconsImgs, title }: BackCompProps) => {
           <BackIconsComp icons={iconsImgs} />
         </div>
       </div>
-      <h2 className="flex items-start text-white font-morabba-bold text-3xl text-nowrap">
+      <h2 className="flex items-start text-white font-morabba-bold text-3xl text-nowrap max-lg:text-2xl">
         <span>{title}</span>
       </h2>
       <div className="parent-icons-parent">

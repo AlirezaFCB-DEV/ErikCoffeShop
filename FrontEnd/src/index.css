@@ -67,7 +67,7 @@
   }
 
   .special-offs-product {
-    @apply min-w-[270px] max-w-[270px] flex-1 max-2xl:min-w-[300px] max-2xl:max-w-[300px] max-xl:min-w-[229px] max-xl:max-w-[229px];
+    @apply min-w-[270px] flex-1 max-2xl:min-w-[300px]  max-xl:min-w-[229px] max-lg:min-w-[264px];
   }
 
   .best-sellers-products {
@@ -75,7 +75,7 @@
   }
 
   .icons-parent {
-    @apply flex gap-18 items-start;
+    @apply flex gap-18 items-start max-lg:gap-12;
   }
 
   .parent-icons-parent {
@@ -152,6 +152,18 @@
 
   .xl_size_training_btns {
     @apply hidden max-xl:block text-primary absolute top-1/2 -translate-y-1/2 cursor-pointer
+  }
+
+  .lg_header_main_circles {
+    @apply size-3.5 rounded-full
+  }
+
+  .circle_active {
+    @apply bg-white
+  }
+
+  .circle_inactive {
+    @apply bg-white-20
   }
 }
 

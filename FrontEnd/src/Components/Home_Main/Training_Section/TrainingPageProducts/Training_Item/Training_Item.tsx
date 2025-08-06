@@ -6,10 +6,14 @@ import type { TrainingItemsProps } from "../Training_Items_Data";
 const Training_Item = ({ img, date, text }: TrainingItemsProps) => {
   return (
     <>
-      <SPOffsAndTrainingWrapper className="w-1/3 hover:-translate-y-2 transition-transform group border-stroke bg-white border-2 py-4  px-3 flex flex-col  justify-between  select-none  cursor-pointer rounded-3xl outline-[10px] outline-[#ffffff1a] drop-shadow-[#0000000D] drop-shadow-2xl gap-y-12">
+      <SPOffsAndTrainingWrapper className="flex-1/3 hover:-translate-y-2 transition-transform group border-stroke bg-white border-2 py-4  px-3 flex flex-col  justify-between min-w-[360px] h-[400px]  select-none  cursor-pointer rounded-3xl outline-[10px] outline-[#ffffff1a] gap-y-12 max-xl:flex-1 max-xl:min-w-[420px]">
         <div className="flex  justify-center flex-col gap-4 ">
           <div className="flex justify-center">
-            <img src={img} alt="محصول" className="w-full h-[240px]" />
+            <img
+              src={img}
+              alt="محصول"
+              className="w-full h-[240px]"
+            />
           </div>
 
           <div>

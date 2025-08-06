@@ -7,7 +7,7 @@ import Drop_Down from "./Drop_Down/Drop_Down";
 const NavigationMenu = () => {
   return (
     <nav className="w-full flex justify-between pl-4 pr-15 h-17 rounded-full bg-txt text-white max-xl:text-sm relative">
-      <ul className="flex gap-10">
+      <ul className="flex gap-10 select-none">
         <li className="nav_menu_items">
           <Link to="/" className="flex items-center gap-1">
             <RiCircleFill className="text-[10px]" />

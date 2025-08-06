@@ -149,6 +149,10 @@
   .drop_down_main_category_icon {
     @apply size-8 object-cover;
   }
+
+  .xl_size_training_btns {
+    @apply hidden max-xl:block text-primary absolute top-1/2 -translate-y-1/2 cursor-pointer
+  }
 }
 
 @keyframes move {

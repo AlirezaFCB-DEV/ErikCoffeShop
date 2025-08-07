@@ -30,23 +30,28 @@ const Product = ({
           <img
             src={img}
             alt="محصول"
-            className="w-[200px] h-[240px] max-xl:w-[150px] max-xl:h-[200px] object-contain "
+            className="w-[200px] h-[240px] max-xl:w-[150px] max-xl:h-[200px] object-cover max-md:w-[200px] max-md:h-[240px]"
           />
         </div>
 
         <div>
-          <h3 className="font-iran-yekan-bold transition-colors group-hover:text-primary max-xl:text-sm">
+          <h3 className="font-iran-yekan-bold transition-colors group-hover:text-primary max-xl:text-sm max-md:text-lg">
             {title}
           </h3>
-          <span className="text-sm text-sec-text">{subTitle}</span>
+          <span className="text-sm text-sec-text max-md:text-lg">
+            {subTitle}
+          </span>
         </div>
       </div>
 
       <div className="flex flex-col" dir="ltr">
-        <span className="text-xl line-through relative w-fit blur-[1.5px] max-xl:text-lg">
+        <span className="text-xl line-through relative w-fit blur-[1.5px] max-xl:text-lg max-md:text-xl">
           {realPrice.toLocaleString("fa-IR")}
         </span>
-        <span dir="ltr" className="text-xl text-primary max-xl:text-lg">
+        <span
+          dir="ltr"
+          className="text-xl text-primary max-xl:text-lg max-md:text-xl"
+        >
           {newPrice.toLocaleString("fa-IR")} تومان
         </span>
       </div>

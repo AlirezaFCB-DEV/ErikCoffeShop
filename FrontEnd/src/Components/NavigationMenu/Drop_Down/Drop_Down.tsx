@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Drop_Down = () => {
   return (
-    <div className="absolute w-[70%] z-20 h-90 -right-200 invisible group-hover:visible opacity-0 group-hover:opacity-100 -bottom-90 rounded-3xl bg-white border-2 border-stroke pl-4 text-black flex overflow-hidden transition-all duration-300 group-hover:-right-30">
+    <div className="absolute w-[70%] z-20 h-90 -right-200 invisible group-hover:visible opacity-0 group-hover:opacity-100 -bottom-90 rounded-3xl bg-white border-2 border-stroke pl-4 text-black flex overflow-hidden transition-all duration-300 group-hover:-right-30 max-md:hidden">
       <ul className="flex flex-col flex-1 h-full border-l-2 border-stroke">
         <li className="drop_down_main_category">
           <div className="drop_down_main_category_icon_parent">

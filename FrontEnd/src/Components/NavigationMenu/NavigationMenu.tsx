@@ -6,8 +6,8 @@ import Drop_Down from "./Drop_Down/Drop_Down";
 
 const NavigationMenu = () => {
   return (
-    <nav className="w-full flex justify-between pl-4 pr-15 h-17 rounded-full bg-txt text-white max-xl:text-sm max-lg:pr-8 relative">
-      <ul className="flex gap-10 select-none max-lg:gap-6">
+    <nav className="w-full flex justify-between pl-4 pr-15 h-17 rounded-full bg-txt text-white max-xl:text-sm max-lg:pr-8 relative max-md:pr-4">
+      <ul className="flex gap-10 select-none max-lg:gap-6 max-md:gap-4">
         <li className="nav_menu_items">
           <Link to="/" className="flex items-center gap-1">
             <RiCircleFill className="text-[10px] max-lg:text-[8px]" />
@@ -15,8 +15,8 @@ const NavigationMenu = () => {
           </Link>
         </li>
         <li className="nav_menu_items gap-0.5 group">
-          لیست محصولات
-          <IoIosArrowDown className="rotate-180 group-hover:rotate-0 transition-all duration-300"></IoIosArrowDown>
+          <Link to="/products">لیست محصولات</Link>
+          <IoIosArrowDown className="rotate-180 group-hover:rotate-0 transition-all duration-300 max-md:hidden"></IoIosArrowDown>
           <Drop_Down />
         </li>
         <li className="nav_menu_items">

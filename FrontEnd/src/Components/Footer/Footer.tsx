@@ -20,7 +20,7 @@ const Footer = () => {
           </p>
         </div>
         <div className="border-b-1 border-white p-4">
-          <ul className="flex justify-around items-center text-center m-2">
+          <ul className="flex justify-between items-center mx-auto w-1/2 flex-wrap gap-8">
             <li>دسته بندی کلی یک</li>
             <li>دسته بندی کلی یک</li>
             <li>دسته بندی کلی یک</li>

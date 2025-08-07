@@ -53,7 +53,7 @@ const SpecialOffs = () => {
           <BsChevronRight className="category-btn-icon" />
         </Button>
 
-        <div className="flex flex-nowrap overflow-x-scroll h-full gap-7.5 max-xl:gap-6">
+        <div className="flex flex-nowrap overflow-x-scroll h-full gap-7.5 max-xl:gap-6 max-md:gap-0.5">
           {coffeeCategoryItems.map(() => (
             <Product
               key={crypto.randomUUID()}

@@ -1,4 +1,3 @@
-import { IoMdMenu } from "react-icons/io";
 import { Link } from "react-router-dom";
 
 interface HeaderTop {
@@ -9,7 +8,7 @@ interface HeaderTop {
 const HeaderTop = ({ children, leftIconRoute }: HeaderTop) => {
   return (
     <section className="flex justify-between items-center ">
-      <div className="flex flex-row-reverse justify-center items-center gap-2 max-[630px]:hidden">
+      <div className="flex flex-row-reverse justify-center items-center gap-2 ">
         <div className="bg-secondary p-3 rounded-full">
           <img src="/images/coffee.svg" alt="image" className="size-4.5" />
         </div>
@@ -18,9 +17,6 @@ const HeaderTop = ({ children, leftIconRoute }: HeaderTop) => {
           <span className="font-iran-yekan">۱۲۳۲۳۲۴۳۴</span>
         </div>
       </div>
-      <button className=" sm:collapse max-[630px]:block hidden  transition-colors cursor-pointer bg-secondary p-2.5  rounded-full group-hover:bg-[##28221E]">
-        <IoMdMenu className="transition-colors text-2xl text-[#28221E] group-hover:text-secondary" />
-      </button>
       <div>
         <Link to="/">
           <img src="/images/image 1.svg" alt="" />

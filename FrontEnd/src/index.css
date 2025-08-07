@@ -59,7 +59,7 @@
   }
 
   .category-btn-icon {
-    @apply text-xl transition-colors group-hover:text-white ;
+    @apply text-xl transition-colors group-hover:text-white;
   }
 
   .special-offs-back {
@@ -67,15 +67,19 @@
   }
 
   .special-offs-product {
-    @apply min-w-[270px] flex-1 max-2xl:min-w-[300px]  max-xl:min-w-[229px] max-lg:min-w-[264px];
+    @apply min-w-[270px] flex-1 max-2xl:min-w-[300px]  max-xl:min-w-[229px] max-lg:min-w-[264px] max-md:min-w-full;
   }
 
   .best-sellers-products {
-    @apply min-w-[310px] max-w-[310px];
+    @apply min-w-[310px] max-w-[310px] max-md:min-w-3/5;
+  }
+
+  .best-sellers-products img {
+    @apply min-h-75;
   }
 
   .icons-parent {
-    @apply flex gap-18 items-start max-lg:gap-12;
+    @apply flex gap-18 items-start max-lg:gap-12 max-md:gap-6;
   }
 
   .parent-icons-parent {
@@ -92,6 +96,9 @@
 
   .training-page {
     @apply h-[426px];
+  }
+  .training-page img {
+    @apply max-md:size-10;
   }
 
   .header-top-icon {
@@ -151,19 +158,19 @@
   }
 
   .xl_size_training_btns {
-    @apply hidden max-xl:block text-primary absolute top-1/2 -translate-y-1/2 cursor-pointer
+    @apply hidden max-xl:block text-primary absolute top-1/2 -translate-y-1/2 cursor-pointer;
   }
 
   .lg_header_main_circles {
-    @apply size-3.5 rounded-full
+    @apply size-3.5 rounded-full max-md:size-2.5;
   }
 
   .circle_active {
-    @apply bg-white
+    @apply bg-white;
   }
 
   .circle_inactive {
-    @apply bg-white-20
+    @apply bg-white-20;
   }
 }
 

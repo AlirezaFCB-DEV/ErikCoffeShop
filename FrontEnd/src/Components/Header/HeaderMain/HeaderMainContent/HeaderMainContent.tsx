@@ -5,8 +5,8 @@ import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 
 const HeaderMainContent = () => {
   return (
-    <div className="flex gap-6 text-white pb-20 max-lg:relative ">
-      <div className="bg-txt flex-1 p-12 rounded-2xl flex flex-col justify-center gap-8 max-xl:items-center max-xl:px-8 max-xl:gap-12 max-lg:min-h-175 max-lg:justify-start max-lg:gap-6 max-md:min-h-160">
+    <div className="flex gap-6 text-white pb-20 max-lg:relative">
+      <div className="bg-txt flex-1 p-12 rounded-2xl flex flex-col justify-center gap-8 max-xl:items-center max-xl:px-8 max-xl:gap-12 max-lg:min-h-175 max-lg:justify-start max-lg:gap-6 max-md:min-h-160 max-sm:min-h-150 ">
         <div className="flex flex-col gap-3 max-xl:items-center">
           <span className="font-ms-madi text-2xl max-lg:text-4xl max-md:text-2xl">
             ErickCoffee
@@ -27,7 +27,7 @@ const HeaderMainContent = () => {
           <FaArrowLeftLong className="text-xl max-xl:text-base" />
         </a>
       </div>
-      <div className="bg-[#847669] opacity-90 p-20 flex-3 flex items-center relative min-h-100 rounded-2xl overflow-hidden max-lg:absolute max-lg:w-11/12 max-lg:left-1/2 max-lg:-translate-x-1/2 max-lg:bottom-35 max-md:min-h-90">
+      <div className="bg-[#847669] opacity-90 p-20 flex-3 flex items-center relative min-h-100 rounded-2xl overflow-hidden max-lg:absolute max-lg:w-11/12 max-lg:left-1/2 max-lg:-translate-x-1/2 max-lg:bottom-35 max-md:min-h-90 max-sm:min-h-80">
         <div className="flex flex-col  gap-8  ">
           <h2 className="font-morabba-bold text-5xl max-xl:text-4xl">
             کـــافــــه از تــــو
@@ -53,10 +53,10 @@ const HeaderMainContent = () => {
         <div className="lg_header_main_circles circle_inactive"></div>
       </div>
 
-      <Button className="absolute text-4xl max-lg:bottom-72 right-12 hover:right-8 transition-transform max-md:bottom-75 max-md:hover:right-12">
+      <Button className="absolute text-4xl max-lg:bottom-72 right-12 hover:right-8 transition-transform max-md:bottom-75 max-md:hover:right-12 max-sm:bottom-70">
         <BsChevronRight />
       </Button>
-      <Button className="absolute text-4xl max-lg:bottom-72 left-12 hover:left-8 transition-transform max-md:bottom-75 max-md:transition-none max-md:hover:right-12">
+      <Button className="absolute text-4xl max-lg:bottom-72 left-12 hover:left-8 transition-transform max-md:bottom-75 max-md:transition-none max-md:hover:right-12 max-sm:bottom-70">
         <BsChevronLeft />
       </Button>
     </div>

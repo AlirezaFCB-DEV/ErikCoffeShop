@@ -6,8 +6,8 @@ import { MdPhoneInTalk } from "react-icons/md";
 
 const Cart_Services = () => {
   return (
-    <div className="flex justify-between gap-8 min-h-90">
-      <div className="services-alignment flex-1">
+    <div className="flex justify-between gap-8 min-h-90 max-sm:flex-col">
+      <div className="services-alignment flex-1 max-sm:gap-4">
         <Service title="شرایط ارسال" desc="حدود ۲ الی ۶ روز کاری">
           <FaTruckFast className="service-icon" />
         </Service>

@@ -7,7 +7,7 @@ const Cart_Product = () => {
   return (
     <div className="cart_product">
       <Cart_Product_Image />
-      <div className="flex flex-3  flex-col justify-between items-start">
+      <div className="flex flex-3  flex-col justify-between items-start max-xl:gap-5 max-lg:gap-3 max-md:flex-1">
         <Cart_Product_Title />
 
         <Cart_Product_Properties />

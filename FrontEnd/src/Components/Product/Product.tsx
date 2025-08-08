@@ -30,27 +30,27 @@ const Product = ({
           <img
             src={img}
             alt="محصول"
-            className="w-[200px] h-[240px] max-xl:w-[150px] max-xl:h-[200px] object-cover max-md:w-[200px] max-md:h-[240px]"
+            className="w-[200px] h-[240px] max-xl:w-[150px] max-xl:h-[200px] object-cover max-md:w-[200px] max-md:h-[240px] max-sm:w-[150px] max-sm:h-[150px]"
           />
         </div>
 
         <div>
-          <h3 className="font-iran-yekan-bold transition-colors group-hover:text-primary max-xl:text-sm max-md:text-lg">
+          <h3 className="font-iran-yekan-bold transition-colors group-hover:text-primary max-xl:text-sm max-md:text-lg max-sm:text-base">
             {title}
           </h3>
-          <span className="text-sm text-sec-text max-md:text-lg">
+          <span className="text-sm text-sec-text max-md:text-lg max-sm:text-base">
             {subTitle}
           </span>
         </div>
       </div>
 
       <div className="flex flex-col" dir="ltr">
-        <span className="text-xl line-through relative w-fit blur-[1.5px] max-xl:text-lg max-md:text-xl">
+        <span className="text-xl line-through relative w-fit blur-[1.5px] max-xl:text-lg max-md:text-xl max-sm:text-lg">
           {realPrice.toLocaleString("fa-IR")}
         </span>
         <span
           dir="ltr"
-          className="text-xl text-primary max-xl:text-lg max-md:text-xl"
+          className="text-xl text-primary max-xl:text-lg max-md:text-xl max-sm:text-lg"
         >
           {newPrice.toLocaleString("fa-IR")} تومان
         </span>

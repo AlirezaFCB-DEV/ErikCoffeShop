@@ -12,7 +12,7 @@ export const Back = ({ sizeClass, iconsImgs, title }: BackCompProps) => {
 
   return (
     <div
-      className={`mx-auto ${sizeClass} bg-txt rounded-4xl flex justify-between px-16 py-14`}
+      className={`mx-auto ${sizeClass} bg-txt rounded-4xl flex justify-between px-16 py-14 max-sm:px-0`}
     >
       <div className="parent-icons-parent">
         <div className="icons-parent">

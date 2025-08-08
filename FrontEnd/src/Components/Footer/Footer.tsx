@@ -29,7 +29,7 @@ const Footer = () => {
             <li className="text-center w-full">دسته بندی کلی یک</li>
           </ul>
         </div>
-        <div className="w-full  flex justify-around items-center text-center">
+        <div className="w-full  flex justify-around items-center text-center max-sm:flex-col">
           <div className="flex flex-col  items-start">
             <a
               href="#"
@@ -57,7 +57,7 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-      <div className="bg-[#1A1613] w-full px-8 py-4 m-0 text-white flex justify-between  items-center text-center">
+      <div className="bg-[#1A1613] w-full px-8 py-4 m-0 text-white flex justify-between  items-center text-center max-sm:flex-col">
         <p className="flex justify-center items-center text-center">
           <span className="text-2xl p-2">&copy;</span>
           تمام حقوق این وب سایت متعلق به قهوه اریک میباشد

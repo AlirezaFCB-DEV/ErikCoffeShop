@@ -11,21 +11,21 @@ const SpecialOffs = () => {
   return (
     <SPOffsAndTrainingWrapper className="bg-white outline-[10px] outline-[#ffffff1a] drop-shadow-[#0000000D] drop-shadow-2xl w-[85%] h-[572px] absolute top-34 left-1/2 -translate-x-1/2 rounded-4xl px-18 py-8  max-xl:w-4/5 max-xl:px-10 max-xl:h-[510px]">
 
-      <div className="flex gap-20 items-center px-10 border-b-stroke border-b-2 max-2xl:gap-10 max-xl:gap-6 max-xl:px-5 relative">
+      <div className="flex gap-20 items-center px-10 border-b-stroke border-b-2 max-2xl:gap-10 max-xl:gap-6 max-xl:px-5 relative max-sm:flex-col max-sm:justify-center max-sm:px-2 max-sm:gap-2">
 
-        <h3 className="font-iran-yekan-bold text-xl text-nowrap max-2xl:text-lg  max-xl:text-xl max-xl:text-nowrap">
+        <h3 className="font-iran-yekan-bold text-xl text-nowrap max-2xl:text-lg  max-xl:text-xl max-xl:text-nowrap max-sm:text-[12px]">
           دسته‌بندی ها
         </h3>
 
-        <ul className="flex items-center gap-20 text-sec-text max-2xl:gap-8 max-xl:gap-6 max-lg:overflow-scroll">
+        <ul className="flex items-center gap-20 text-sec-text max-2xl:gap-8 max-xl:gap-6 max-lg:overflow-scroll max-sm:gap-3 w-full">
           {specialOffsCategories.map((item) => (
             <li
               key={item.id}
               className={`${
                 item.active ? "special-offs-category-item-active" : ""
-              } py-3 group cursor-pointer  text-lg text-nowrap relative max-2xl:text-base max-xl:text-sm `}
+              } py-3 group cursor-pointer  text-lg text-nowrap relative max-2xl:text-base max-xl:text-sm max-sm:text-[12px] max-sm:min-w-1/2`}
             >
-              <button className=" cursor-pointer group-hover:text-primary">
+              <button className=" cursor-pointer group-hover:text-primary max-sm:w-full text-center">
                 {item.title}
               </button>
               <div
@@ -37,19 +37,19 @@ const SpecialOffs = () => {
           ))}
         </ul>
 
-        <Button className="absolute left-1 text-xl">
+        <Button className="hidden max-md:block absolute left-1 max-sm:-left-5 max-sm:top-9 text-xl">
           <BsChevronLeft />
         </Button>
-        <Button className="absolute right-36 text-xl">
+        <Button className="hidden  max-md:block absolute right-36 text-xl max-sm:-right-5 max-sm:top-9">
           <BsChevronRight />
         </Button>
       </div>
-      <div className="h-[75%] w-[90%] left-1/2 -translate-x-1/2 max-xl:w-[90%] bottom-8 absolute">
-        <Button className="category-btn absolute -left-4 top-1/2  max-xl:-left-3">
+      <div className="h-[75%] w-[90%] left-1/2 -translate-x-1/2 max-xl:w-[90%] bottom-4 absolute">
+        <Button className="category-btn absolute -left-4 top-1/2  max-xl:-left-3 max-sm:-left-2">
           <BsChevronLeft className="category-btn-icon" />
         </Button>
 
-        <Button className="category-btn absolute -right-4 top-1/2 max-xl:-right-3 ">
+        <Button className="category-btn absolute -right-4 top-1/2 max-xl:-right-3 max-sm:-right-2 ">
           <BsChevronRight className="category-btn-icon" />
         </Button>
 

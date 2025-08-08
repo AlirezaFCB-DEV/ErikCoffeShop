@@ -1,39 +1,12 @@
-import { FaInstagram } from "react-icons/fa";
-import { IoIosArrowDown } from "react-icons/io";
-import { RiCircleFill } from "react-icons/ri";
-import { Link } from "react-router-dom";
-import Drop_Down from "./Drop_Down/Drop_Down";
+import Nav_List from "../Nav_List/Nav_List";
+import Nav_Logo from "../Nav_Logo/Nav_Logo";
 
 const NavigationMenu = () => {
   return (
-    <nav className="w-full flex justify-between pl-4 pr-15 h-17 rounded-full bg-txt text-white max-xl:text-sm max-lg:pr-8 relative max-md:pr-4">
-      <ul className="flex gap-10 select-none max-lg:gap-6 max-md:gap-4">
-        <li className="nav_menu_items">
-          <Link to="/" className="flex items-center gap-1">
-            <RiCircleFill className="text-[10px] max-lg:text-[8px]" />
-            <span>صفحه اصلی</span>
-          </Link>
-        </li>
-        <li className="nav_menu_items gap-0.5 group">
-          <Link to="/products">لیست محصولات</Link>
-          <IoIosArrowDown className="rotate-180 group-hover:rotate-0 transition-all duration-300 max-md:hidden"></IoIosArrowDown>
-          <Drop_Down />
-        </li>
-        <li className="nav_menu_items">
-          <Link to="/tutorials">آموزش ها</Link>
-        </li>
-        <li className="nav_menu_items">
-          <Link to="/about">درباره</Link>
-        </li>
-        <li className="nav_menu_items">
-          <Link to="/contact">تماس باما</Link>
-        </li>
-      </ul>
+    <nav className="w-full flex justify-between pl-4 pr-15 h-17 rounded-full bg-txt text-white max-xl:text-sm max-lg:pr-8 relative max-md:pr-4 max-sm:hidden">
+      <Nav_List />
       <div className="h-full flex items-center">
-        <div className="flex bg-white-20 p-2.5 rounded-full items-center gap-1">
-          <span className="text-sm mt-0.5">Erick.Cafeee</span>
-          <FaInstagram className="text-2xl max-xl:text-xl" />
-        </div>
+        <Nav_Logo />
       </div>
     </nav>
   );

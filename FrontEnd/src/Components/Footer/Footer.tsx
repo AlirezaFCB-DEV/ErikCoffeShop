@@ -21,12 +21,12 @@ const Footer = () => {
         </div>
         <div className="border-b-1 border-white p-4">
           <ul className="flex justify-between items-center mx-auto w-1/2 flex-wrap gap-8">
-            <li>دسته بندی کلی یک</li>
-            <li>دسته بندی کلی یک</li>
-            <li>دسته بندی کلی یک</li>
-            <li>دسته بندی کلی یک</li>
-            <li>دسته بندی کلی یک</li>
-            <li>دسته بندی کلی یک</li>
+            <li className="text-center w-full">دسته بندی کلی یک</li>
+            <li className="text-center w-full">دسته بندی کلی یک</li>
+            <li className="text-center w-full">دسته بندی کلی یک</li>
+            <li className="text-center w-full">دسته بندی کلی یک</li>
+            <li className="text-center w-full">دسته بندی کلی یک</li>
+            <li className="text-center w-full">دسته بندی کلی یک</li>
           </ul>
         </div>
         <div className="w-full  flex justify-around items-center text-center">

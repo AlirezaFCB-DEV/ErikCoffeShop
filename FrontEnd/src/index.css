@@ -131,7 +131,7 @@
   }
 
   .cart_product {
-    @apply flex gap-8 h-full w-full relative py-9 border-b-2 border-stroke last:border-none;
+    @apply flex gap-8 h-full w-full relative py-9 border-b-2 border-stroke last:border-none max-lg:py-6 max-lg:gap-4 max-md:gap-8 max-sm:gap-2;
   }
 
   .contact_form_inp {

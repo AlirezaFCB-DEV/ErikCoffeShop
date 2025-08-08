@@ -36,7 +36,7 @@ const HeaderTop = ({ children, leftIconRoute }: HeaderTop) => {
 
         <div
           className={`${
-            is_active_mobile ? "translate-x-0" : "translate-x-96"
+            is_active_mobile ? "translate-x-0" : "translate-x-150"
           } hidden max-sm:flex flex-col fixed top-0 -right-0 z-40 bg-txt w-4/5 h-[110vh] text-white p-8 gap-8 transition-transform duration-500`}
         >
           <div className="flex items-center justify-center relative">

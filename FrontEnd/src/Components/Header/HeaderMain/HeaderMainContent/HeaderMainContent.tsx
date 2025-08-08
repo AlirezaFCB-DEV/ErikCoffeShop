@@ -6,7 +6,7 @@ import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 const HeaderMainContent = () => {
   return (
     <div className="flex gap-6 text-white pb-20 max-lg:relative">
-      <div className="bg-txt flex-1 p-12 rounded-2xl flex flex-col justify-center gap-8 max-xl:items-center max-xl:px-8 max-xl:gap-12 max-lg:min-h-175 max-lg:justify-start max-lg:gap-6 max-md:min-h-160 max-sm:min-h-150 ">
+      <div className="bg-txt flex-1 p-12 rounded-2xl flex flex-col justify-center gap-8 max-xl:items-center max-xl:px-8 max-xl:gap-12 max-lg:min-h-175 max-lg:justify-start max-lg:gap-6 max-md:min-h-160 max-sm:min-h-155 max-sm:w-fit">
         <div className="flex flex-col gap-3 max-xl:items-center">
           <span className="font-ms-madi text-2xl max-lg:text-4xl max-md:text-2xl">
             ErickCoffee
@@ -16,7 +16,7 @@ const HeaderMainContent = () => {
             <ImLeaf className="text-green-600 text-4xl rotate-y-180 absolute left-8 max-xl:-left-3.5 max-xl:text-2xl" />
           </h1>
         </div>
-        <p className="text-secondary text-lg text-nowrap max-xl:text-sm max-lg:text-lg max-md:text-base">
+        <p className="text-secondary text-lg text-nowrap max-xl:text-sm max-lg:text-lg max-md:text-base max-sm:text-sm">
           کامل ترین تجهیزات کافه و رستوران در ایران
         </p>
         <a

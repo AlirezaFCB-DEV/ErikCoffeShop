@@ -15,19 +15,19 @@ const Contact = () => {
 
       <main className="border-stroke border-2 rounded-2xl py-8">
         <div className="container mx-auto flex flex-col gap-10">
-          <div className="flex gap-20">
+          <div className="flex gap-20 max-sm:flex-col-reverse max-sm:gap-10">
             <div className="flex-1 flex flex-col gap-8">
               <div className="flex flex-col gap-8">
-                <div className="flex items-end gap-2 font-morabba-bold">
+                <div className="flex items-end gap-2 font-morabba-bold max-sm:hidden">
                   <h1 className="text-6xl">تماس با</h1>
                   <span className="text-2xl text-concat-icon">قهوه اریک</span>
                 </div>
-                <div className="text-xl flex flex-col gap-4">
+                <div className="text-xl flex flex-col gap-4 text-wrap">
                   <p>
                     کاربر گرامی قهوه اریک؛ باعث افتخار ماست تا نظرات خود را با
                     ما از طریق این فرم به اشتراک بگذارید.
                   </p>
-                  <p className="w-150 text-md">
+                  <p className="max-w-150 text-md">
                     جهت اعلام شکایت، نظر، انتقاد و پیشنهاد در مورد سرویس‌دهی
                     وب‌سایت می‌توانید با شماره تلفن 09394785984 تماس بگیرید یا
                     از طریق فرم زیر موضوع موردنظر را با ما در میان بگذارید.

@@ -1,6 +1,6 @@
 const Article = () => {
   return (
-    <div className="tutorial_page_shadow w-108 rounded-2xl overflow-hidden hover:-translate-y-2 transition-transform max-2xl:w-90 max-xl:w-70 max-lg:w-110 max-md:w-50 max-sm:w-full">
+    <div className="tutorial_page_shadow w-108 rounded-2xl overflow-hidden hover:-translate-y-2 transition-transform max-2xl:w-90 max-xl:w-70 max-lg:w-110 max-md:w-67 max-sm:w-full">
       <img src="/images/article-1.png" className="w-full h-44 object-cover" alt="" />
 
       <div className="p-6 flex flex-col gap-8">

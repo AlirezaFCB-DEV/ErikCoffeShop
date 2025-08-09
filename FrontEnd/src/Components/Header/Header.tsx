@@ -17,7 +17,7 @@ const Header = () => {
         </HeaderTop>
         <HeaderMain />
       </div>
-      <div className="hidden max-sm:block absolute bottom-0 left-0 w-fit overflow-hidden z-30 ">
+      <div className="absolute bottom-0 left-0 w-fit overflow-hidden z-30 ">
         <HeaderBottom />
       </div>
     </header>

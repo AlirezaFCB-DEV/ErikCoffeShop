@@ -151,7 +151,11 @@
   }
 
   .nav_menu_items {
-    @apply flex items-center h-full text-white opacity-60 max-sm:text-lg;
+    @apply flex items-center h-full text-white  max-sm:text-lg;
+  }
+
+  .nav_menu_items .link , .nav_menu_items svg{
+    @apply opacity-60
   }
 
   .drop_down_main_category {

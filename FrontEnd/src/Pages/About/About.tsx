@@ -6,14 +6,14 @@ const About = () => {
     <>
       <div className="container flex flex-col">
         <Short_Header />
-        <main className="flex items-center gap-16">
-          <div className="flex-2 font-iran-yekan text-lg">
-            <div className="flex font-iran-yekan-bold text-stone-600">
-              <h2>قهوه اِریک</h2>
-              <p>، فروشگاه اینترنتی تجهیزات قهوه و لوازم کافی شاپ</p>
+        <main className="flex items-center gap-16 max-2xl:mt-8 flex-wrap max-lg:flex-col-reverse">
+          <div className="flex-2 max-xl:flex-2 font-iran-yekan text-lg">
+            <div className="flex font-iran-yekan-bold text-stone-600 max-md:text-base">
+              <h2 className="">قهوه اِریک</h2>
+              <p className="">، فروشگاه اینترنتی تجهیزات قهوه و لوازم کافی شاپ</p>
             </div>
             <span className="text-4xl">---</span>
-            <div className="flex text-sm text-nowrap">
+            <div className="flex text-sm text-nowrap max-xl:text-wrap">
               <p>
                 فروشگاه اینترنتی قهوه اِریک ،خرید اینترنتی آسان و مطمئن با
                 بهترین قیمت
@@ -41,7 +41,7 @@ const About = () => {
               بهترین های لوازم کافی شاپ از قهوه خود لذت ببرید.
             </p>
           </div>
-          <div className="flex-2">
+          <div className="flex-2 ">
             <img src="/images/About-us-page-rafiki.jpg" alt="تماس با ما" />
           </div>
         </main>

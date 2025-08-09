@@ -10,8 +10,8 @@ const Articles = () => {
       <div className="container">
         <Short_Header />
       </div>
-      <div className="flex flex-row-reverse pl-16 pr-8 relative max-sm:flex-col-reverse max-sm:pl-8 max-sm:gap-8">
-        <aside className="min-h-200 flex-2 tutorial_page_shadow rounded-2xl max-lg:flex-2 max-lg:h-fit max-lg:sticky max-lg:top-5 max-md:">
+      <div className="flex flex-row-reverse pl-16 pr-8 relative max-md:flex-col-reverse max-md:pl-8 max-md:gap-8">
+        <aside className="min-h-200 flex-2 tutorial_page_shadow rounded-2xl max-lg:flex-2 max-lg:h-fit max-lg:sticky max-lg:top-5">
           <h2 className="font-morabba-bold text-2xl text-center p-4">تازه ترین</h2>
 
           <ul className="flex flex-col gap-8 px-4">
@@ -38,7 +38,7 @@ const Articles = () => {
           </ul>
         </aside>
 
-        <div className="flex flex-7 flex-wrap gap-8 max-2xl:flex-4 max-lg:flex-5">
+        <div className="flex flex-7 flex-wrap gap-8 max-2xl:flex-4 max-lg:flex-5 max-md:justify-between">
           <Link to="title">
             <Article />
           </Link>

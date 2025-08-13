@@ -24,29 +24,26 @@ const HeaderTop = ({ children, leftIconRoute }: HeaderTop) => {
           <span className="font-iran-yekan">۱۲۳۲۳۲۴۳۴</span>
         </div>
       </div>
-      <div className={`${is_active_mobile ? "active_menu" : ""}`}>
-        <Button
-          className={`hidden bg-primary size-12 max-sm:flex items-center flex-col justify-center gap-1 rounded-full`}
-          onClick={() => set_is_active_mobile(true)}
-        >
-          <span className="mobile_menu_lines"></span>
-          <span className="mobile_menu_lines"></span>
-          <span className="mobile_menu_lines"></span>
-        </Button>
-
-        <div
-          className={`${
-            is_active_mobile ? "translate-x-0" : "translate-x-150"
-          } hidden max-sm:flex flex-col fixed top-0 -right-0 z-40 bg-txt w-4/5 h-[110vh] text-white p-8 gap-8 transition-transform duration-500`}
-        >
-          <div className="flex items-center justify-center relative">
-            <Nav_Logo />
-            <Button onClick={() => set_is_active_mobile(false)}>
-              <RxCross2  className="text-4xl -top-3 -left-3 absolute"/>
-            </Button>
-          </div>
-          <Nav_List />
+      <Button
+        className={`hidden bg-primary size-12 max-sm:flex items-center flex-col justify-center gap-1 rounded-full`}
+        onClick={() => set_is_active_mobile(true)}
+      >
+        <span className="mobile_menu_lines"></span>
+        <span className="mobile_menu_lines"></span>
+        <span className="mobile_menu_lines"></span>
+      </Button>
+      <div
+        className={`${
+          is_active_mobile ? "translate-x-0" : "translate-x-150"
+        } hidden max-sm:flex flex-col fixed top-0 -right-0 z-40 bg-txt w-4/5 h-[110vh] text-white p-8 gap-8 transition-transform duration-500`}
+      >
+        <div className="flex items-center justify-center relative">
+          <Nav_Logo />
+          <Button onClick={() => set_is_active_mobile(false)}>
+            <RxCross2 className="text-4xl -top-3 -left-3 absolute" />
+          </Button>
         </div>
+        <Nav_List />
       </div>
       <div>
         <Link to="/">

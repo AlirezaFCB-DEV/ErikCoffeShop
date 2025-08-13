@@ -12,16 +12,18 @@ const BestSellersProducts = () => {
       subTitle: "دانه قهوه",
       title: "دانه قهوه باکسی برند",
       sizeClass: "best-sellers-products",
+      route: "/products/category/product-1",
     }))
   );
 
-
   return (
     <div className="flex flex-col items-center gap-24">
-      <div className="flex flex-wrap justify-center gap-23 max-2xl:gap-10">
+      <div className="flex flex-wrap max-sm:w-full justify-center gap-23 max-2xl:gap-10">
         {productsArr.length > 8
           ? ""
-          : productsArr.map((item) => <Product {...item}  key={crypto.randomUUID()}/>)}
+          : productsArr.map((item) => (
+              <Product {...item} key={crypto.randomUUID()} />
+            ))}
       </div>
       <Button className="bs-products-btn group">
         <span className="text-xl group-hover:text-primary transition-colors">

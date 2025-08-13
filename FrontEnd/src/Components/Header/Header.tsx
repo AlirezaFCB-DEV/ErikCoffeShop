@@ -5,7 +5,7 @@ import { IoCart } from "react-icons/io5";
 
 const Header = () => {
   return (
-    <header className=" bg-[#FFF8F5] pt-4 min-h-185 relative w-full overflow-hidden ">
+    <header className=" bg-[#FFF8F5] pt-4 min-h-185 relative w-full overflow-hidden max-md:min-h-130 max-sm:min-h-140 ">
       <img
         src="/images/leaf.svg"
         alt="leaf"

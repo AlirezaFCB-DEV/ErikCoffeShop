@@ -20,13 +20,14 @@ const routes: RoutesProps[] = [
     path: "/",
     element: <Home />,
   },
-    { path: "/cart", element: <Cart /> },
-    { path: "/user", element: <User /> },
-    { path: "/cms/:id", element: <Cms /> },
-    { path : "/tutorials" , element: <Tutorials />},
-    { path : "/about" , element: <About />},
-    { path : "/contact" , element: <Contact />},
-    { path : "/products" , element: <Products />},
+  { path: "/cart", element: <Cart /> },
+  { path: "/user", element: <User /> },
+  { path: "/cms/:id", element: <Cms /> },
+  { path: "/tutorials", element: <Tutorials /> },
+  { path: "/about", element: <About /> },
+  { path: "/contact", element: <Contact /> },
+  { path: "/products", element: <Products /> },
+  { path: "*", element: <Home /> },
 ];
 
 export default routes;

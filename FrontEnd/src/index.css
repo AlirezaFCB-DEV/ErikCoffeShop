@@ -66,14 +66,12 @@
     @apply w-full h-[520px];
   }
 
-
-
   .special-offs-product img {
     @apply w-full h-auto object-cover max-md:h-[240px] max-sm:h-[150px];
   }
 
   .best-sellers-products {
-    @apply min-w-[310px] max-w-[310px] max-md:min-w-3/5 max-sm:min-w-full;
+    @apply min-w-[310px] max-w-[310px] max-md:min-w-3/5 max-sm:min-w-[60vw];
   }
 
   .best-sellers-products img {
@@ -151,8 +149,8 @@
     @apply flex items-center h-full text-white  max-sm:text-lg;
   }
 
-  .nav_menu_items .link,
-  .nav_menu_items svg {
+  .nav_inactive_item .link,
+  .nav_inactive_item svg {
     @apply opacity-60;
   }
 

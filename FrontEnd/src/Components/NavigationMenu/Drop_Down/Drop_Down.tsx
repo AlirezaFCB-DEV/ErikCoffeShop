@@ -39,11 +39,9 @@ const Drop_Down = () => {
         <div className="flex flex-col gap-2">
           <div className="flex items-center gap-2">
             <div className="bg-secondary size-2 rounded-full"></div>
-            <h3 className="font-morabba-bold">
-              <Link className="" to="products">
-                قهوه ساز
-              </Link>
-            </h3>
+            <Link className="" to="products">
+              <h3 className="font-morabba-bold">قهوه ساز</h3>
+            </Link>
           </div>
           <ul className="flex flex-col text-sec-text gap-4">
             <li>
@@ -91,11 +89,9 @@ const Drop_Down = () => {
         <div className="flex flex-col gap-2">
           <div className="flex items-center gap-2">
             <div className="bg-secondary size-2 rounded-full"></div>
-            <h3 className="font-morabba-bold">
-              <Link className="" to="products">
-                قهوه ساز
-              </Link>
-            </h3>
+            <Link className="" to="products">
+              <h3 className="font-morabba-bold">قهوه ساز</h3>
+            </Link>
           </div>
           <ul className="flex flex-col text-sec-text gap-4">
             <li>

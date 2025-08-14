@@ -1,29 +1,32 @@
-import { useState } from "react";
-import Product, { type ProductProps } from "../../Product/Product";
 import Button from "../../Button/Button";
 import { FaArrowLeftLong } from "react-icons/fa6";
+import useGetProducts from "../../../hooks/useGetProduct";
+import Product from "../../Product/Product";
 
 const BestSellersProducts = () => {
-  const [productsArr] = useState<ProductProps[]>(
-    Array.from({ length: 8 }, (_) => ({
-      img: "/images/Products/product1.png",
-      offPercent: 10,
-      realPrice: 2_500_000,
-      subTitle: "دانه قهوه",
-      title: "دانه قهوه باکسی برند",
-      sizeClass: "best-sellers-products",
-      route: "/products/category/product-1",
-    }))
-  );
+  const [products] = useGetProducts("/Data/products.json");
+
+  const load_products = () => {
+    if (products !== null) {
+      return products.length < 8 ? products : [];
+    }
+  };
 
   return (
     <div className="flex flex-col items-center gap-24">
       <div className="flex flex-wrap max-sm:w-full justify-center gap-23 max-2xl:gap-10">
-        {productsArr.length > 8
-          ? ""
-          : productsArr.map((item) => (
-              <Product {...item} key={crypto.randomUUID()} />
-            ))}
+        {load_products()?.map((product) => (
+          <Product
+            realPrice={product.price}
+            offPercent={product.off_percent}
+            img={product.image}
+            route={`/products/${product.category}/product-${product.id}`}
+            sizeClass="best-sellers-products"
+            subTitle={product.category}
+            title={product.name}
+            key={product.id}
+          />
+        ))}
       </div>
       <Button className="bs-products-btn group">
         <span className="text-xl group-hover:text-primary transition-colors">

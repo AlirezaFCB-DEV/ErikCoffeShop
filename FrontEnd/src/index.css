@@ -46,6 +46,15 @@
     width: 87%;
     margin: 0 auto;
   }
+
+  .no_scroll_x {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .no_scroll_x::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 @layer components {
@@ -170,16 +179,16 @@
     @apply hidden max-xl:block text-primary absolute top-1/2 -translate-y-1/2 cursor-pointer;
   }
 
-  .lg_header_main_circles {
+  .header_main_circles {
     @apply size-3.5 rounded-full max-md:size-2.5;
   }
 
   .circle_active {
-    @apply bg-white;
+    @apply bg-primary;
   }
 
   .circle_inactive {
-    @apply bg-white-20;
+    @apply bg-[#9e624c6c];
   }
 
   .mobile_menu_lines {

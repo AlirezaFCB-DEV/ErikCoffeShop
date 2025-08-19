@@ -111,7 +111,7 @@ const HeaderMainContent = () => {
           >
             {slides.map((slide) => (
               <Link to={slide.route} className="min-w-full" key={slide.id}>
-                {slide.img_element}
+              {slide.img_element}
               </Link>
             ))}
           </div>

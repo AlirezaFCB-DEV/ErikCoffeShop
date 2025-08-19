@@ -198,6 +198,26 @@
   .nav_active_item {
     @apply text-lg max-sm:text-2xl font-iran-yekan-bold opacity-100;
   }
+
+  .custom_scroll::-webkit-scrollbar {
+    height: 12px;
+  }
+
+  .custom_scroll::-webkit-scrollbar-track {
+    background: #fff8f5; 
+    border-radius: 4px;
+    margin: 4px 0;
+  }
+
+  .custom_scroll::-webkit-scrollbar-thumb {
+    background-color: #9e624c;
+    border-radius: 8px;
+    border: 2px solid #fff8f5;
+  }
+
+  .custom_scroll::-webkit-scrollbar-thumb:hover {
+    background-color: #a86a56;
+  }
 }
 
 @keyframes move {

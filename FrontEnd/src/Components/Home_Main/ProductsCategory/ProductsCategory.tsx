@@ -6,7 +6,7 @@ const ProductCategory = () => {
   return (
     <section className="flex flex-col gap-10   ">
       <CategoryHeader />
-      <div className="flex justify-between items-center  max-sm:overflow-x-scroll max-sm:overflow-y-hidden max-sm:gap-8">
+      <div className="flex justify-between items-center  max-sm:overflow-x-scroll max-sm:overflow-y-hidden max-sm:gap-8 custom_scroll max-sm:pb-4">
         {categoryItemsData.map((item) => (
           <CategoryItems
             key={item.id}

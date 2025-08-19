@@ -18,7 +18,7 @@ const SpecialOffs = () => {
           <BsChevronRight className="category-btn-icon" />
         </Button>
 
-        <div className="grid  grid-flow-col auto-cols-[23%] gap-8 max-xl:auto-cols-[30%] max-xl:gap-8.5 max-lg:auto-cols-[48%] max-lg:gap-4 overflow-x-scroll max-md:auto-cols-[100%]">
+        <div className="grid  grid-flow-col auto-cols-[23%] gap-8 max-xl:auto-cols-[30%] max-xl:gap-8.5 max-lg:auto-cols-[48%] max-lg:gap-4 overflow-x-scroll max-md:auto-cols-[100%] custom_scroll pb-2">
           {products !== null
             ? products?.map((product) => (
                 <Product

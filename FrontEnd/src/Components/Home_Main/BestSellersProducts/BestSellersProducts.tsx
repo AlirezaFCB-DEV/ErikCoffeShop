@@ -6,16 +6,10 @@ import Product from "../../Product/Product";
 const BestSellersProducts = () => {
   const [products] = useGetProducts("/Data/products.json");
 
-  const load_products = () => {
-    if (products !== null) {
-      return products.length < 8 ? products : [];
-    }
-  };
-
   return (
     <div className="flex flex-col items-center gap-24">
       <div className="flex flex-wrap max-sm:w-full justify-center gap-23 max-2xl:gap-10">
-        {load_products()?.map((product) => (
+        {products?.slice(0, 10)?.map((product) => (
           <Product
             realPrice={product.price}
             offPercent={product.off_percent}

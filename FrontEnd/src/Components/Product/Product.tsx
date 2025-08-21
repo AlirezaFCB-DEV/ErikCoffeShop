@@ -28,7 +28,7 @@ const Product = ({
   return (
     <Link to={route}>
       <div
-        className={` relative border-stroke border-2 py-4 px-6 ${sizeClass} flex flex-col  justify-between rounded-2xl select-none hover:border-primary group transition-colors cursor-pointer min-h-100`}
+        className={` relative border-stroke border-2 py-4 px-6 ${sizeClass} flex flex-col  justify-between rounded-2xl select-none hover:border-primary group transition-colors cursor-pointer`}
       >
         <Off_Percent percent={offPercent} />
 
@@ -37,7 +37,7 @@ const Product = ({
             <img
               src={img}
               alt="محصول"
-              className="w-[200px] h-[240px] max-xl:w-[150px] max-xl:h-[200px] object-cover max-md:w-[200px] max-md:h-[240px] "
+              className="w-[200px] h-[240px] max-xl:w-[250px] max-xl:h-[240px] object-cover max-md:w-[200px] max-md:h-[240px] max-sm:w-[150px] max-sm:h-[200px]"
             />
           </div>
 

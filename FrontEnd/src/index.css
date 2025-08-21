@@ -79,12 +79,16 @@
     @apply w-full h-auto object-cover max-md:h-[240px] max-sm:h-[150px];
   }
 
+  .special-offs-product {
+    @apply min-h-110
+  }
+
   .best-sellers-products {
-    @apply min-w-[310px] max-w-[310px] max-md:min-w-3/5 max-sm:min-w-[60vw];
+    @apply min-w-[310px] max-w-[310px] max-md:min-w-3/5 max-sm:min-w-[310px] min-h-120;
   }
 
   .best-sellers-products img {
-    @apply min-h-75 max-sm:min-h-60;
+    @apply min-h-75 max-sm:min-h-60 min-w-full;
   }
 
   .icons-parent {

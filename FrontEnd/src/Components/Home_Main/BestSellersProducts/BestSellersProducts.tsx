@@ -9,18 +9,21 @@ const BestSellersProducts = () => {
   return (
     <div className="flex flex-col items-center gap-24">
       <div className="flex flex-wrap max-sm:w-full justify-center gap-23 max-2xl:gap-10">
-        {products?.slice(0, 10)?.map((product) => (
-          <Product
-            realPrice={product.price}
-            offPercent={product.off_percent}
-            img={product.image}
-            route={`/products/${product.category}/product-${product.id}`}
-            sizeClass="best-sellers-products"
-            subTitle={product.category}
-            title={product.name}
-            key={product.id}
-          />
-        ))}
+        {products
+          ?.slice(0, 10)
+          .sort((a, b) => b.price - a.price)
+          ?.map((product) => (
+            <Product
+              realPrice={product.price}
+              offPercent={product.off_percent}
+              img={product.image}
+              route={`/products/${product.category}/product-${product.id}`}
+              sizeClass="best-sellers-products"
+              subTitle={product.category}
+              title={product.name}
+              key={product.id}
+            />
+          ))}
       </div>
       <Button className="bs-products-btn group">
         <span className="text-xl group-hover:text-primary transition-colors">

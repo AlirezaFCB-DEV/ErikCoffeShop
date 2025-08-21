@@ -21,32 +21,19 @@ const SpecialOffs = () => {
 
     if (!slider_last_child) return;
 
-    if (window.screen.width <= 768) {
-      switch (dir) {
-        case "l":
-          slider.scrollLeft == slider_last_child.offsetLeft
-            ? slider.scrollTo({ left: 0 })
-            : slider.scrollBy({ left: -slider_last_child.clientWidth });
-          break;
-        case "r":
-          slider.scrollLeft == 0
-            ? slider.scrollTo({ left: slider_last_child.offsetLeft })
-            : slider.scrollBy({ left: slider_last_child.clientWidth });
-          break;
-      }
-    } else {
-      switch (dir) {
-        case "l":
-          slider.scrollLeft == slider_last_child.offsetLeft
-            ? slider.scrollTo({ left: 0 })
-            : slider.scrollBy({ left: -(slider_last_child.clientWidth + 31) });
-          break;
-        case "r":
-          slider.scrollLeft == 0
-            ? slider.scrollTo({ left: slider_last_child.offsetLeft })
-            : slider.scrollBy({ left: slider_last_child.clientWidth + 31 });
-          break;
-      }
+    const offset =
+      slider_last_child.clientWidth + (window.screen.width > 768 ? 31 : 0);
+    switch (dir) {
+      case "l":
+        slider.scrollLeft === slider_last_child.offsetLeft
+          ? slider.scrollTo({ left: 0 })
+          : slider.scrollBy({ left: -offset });
+        break;
+      case "r":
+        slider.scrollLeft === 0
+          ? slider.scrollTo({ left: slider_last_child.offsetLeft })
+          : slider.scrollBy({ left: offset });
+        break;
     }
   };
 

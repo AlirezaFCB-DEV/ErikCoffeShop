@@ -3,7 +3,7 @@ import Off_Percent from "../Off_Percent/Off_Percent";
 
 export interface ProductProps {
   img: string;
-  offPercent: number;
+  offPercent?: number;
   title: string;
   subTitle: string;
   realPrice: number;
@@ -21,7 +21,7 @@ const Product = ({
   route,
 }: ProductProps) => {
   const new_price =
-    offPercent < 100
+    offPercent && offPercent < 100
       ? realPrice - (realPrice / 100) * offPercent
       : realPrice - (realPrice / 100) * 100;
 
@@ -30,8 +30,7 @@ const Product = ({
       <div
         className={` relative border-stroke border-2 py-4 px-6 ${sizeClass} flex flex-col  justify-between rounded-2xl select-none hover:border-primary group transition-colors cursor-pointer`}
       >
-        <Off_Percent percent={offPercent} />
-
+        {offPercent && <Off_Percent percent={offPercent} />}
         <div className="flex  justify-center flex-col h-full">
           <div className="flex justify-center">
             <img

@@ -1,0 +1,5 @@
+{
+  "terminal.integrated.altClickMovesCursor": true,
+  "editor.multiCursorModifier": "alt",
+  "editor.find.autoFindInSelection": "always"
+}

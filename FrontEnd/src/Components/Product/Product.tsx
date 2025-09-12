@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Off_Percent from "../Off_Percent/Off_Percent";
+import Img from "../Img/Img";
 
 export interface ProductProps {
   img: string;
@@ -25,6 +26,13 @@ const Product = ({
       ? realPrice - (realPrice / 100) * offPercent
       : realPrice - (realPrice / 100) * 100;
 
+  const img_props = {
+    src: img,
+    alt: "محصول",
+    className:
+      "w-[200px] h-[240px] max-xl:w-[250px] max-xl:h-[240px] object-cover max-md:w-[200px] max-md:h-[240px] max-sm:w-[150px] max-sm:h-[200px]",
+  };
+
   return (
     <Link to={route}>
       <div
@@ -33,11 +41,7 @@ const Product = ({
         {offPercent && <Off_Percent percent={offPercent} />}
         <div className="flex  justify-center flex-col h-full">
           <div className="flex justify-center">
-            <img
-              src={img}
-              alt="محصول"
-              className="w-[200px] h-[240px] max-xl:w-[250px] max-xl:h-[240px] object-cover max-md:w-[200px] max-md:h-[240px] max-sm:w-[150px] max-sm:h-[200px]"
-            />
+            <Img {...img_props} />
           </div>
 
           <div>

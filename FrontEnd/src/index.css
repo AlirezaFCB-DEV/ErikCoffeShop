@@ -41,10 +41,15 @@
   --font-ms-madi: ms-madi;
 }
 
+@layer base {
+  img {
+    
+  }
+}
+
 @layer utilities {
   .container {
-    width: 87%;
-    margin: 0 auto;
+    @apply mx-auto w-full max-sm:w-[98%]
   }
 
   .no_scroll_x {

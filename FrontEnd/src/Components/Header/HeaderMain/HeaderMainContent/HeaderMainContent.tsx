@@ -1,14 +1,51 @@
 import { FaArrowLeftLong } from "react-icons/fa6";
 import { ImLeaf } from "react-icons/im";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Link } from "react-router-dom";
 // import Button from "../../../Button/Button";
 // import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
-// import { Link } from "react-router-dom";
-import Slider from "./Slider/Slider";
+import type header_slider_props from "../../../../Types/SlidesProps.types";
+
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import Img from "../../../Img/Img";
 
 const HeaderMainContent = () => {
+  const slides: header_slider_props[] = [
+    {
+      id: 1,
+      img_props: {
+        className: "h-full w-full",
+        src: "/images/Banners/cofe_erick-sliderbanner_2desktop-1.jpg",
+        alt: "بنر تبلیغاتی",
+      },
+      route: `/products`,
+    },
+    {
+      id: 2,
+      img_props: {
+        src: "/images/Banners/cofe_erick-sliderbanner_1desktop.jpg",
+        alt: "بنر تبلیغاتی",
+        className: "h-full w-full",
+      },
+      route: "/products",
+    },
+    {
+      id: 3,
+      img_props: {
+        src: "/images/Banners/cofe_erick-sliderbanner_1desktop.jpg",
+        alt: "بنر تبلیغاتی",
+        className: "h-full w-full",
+      },
+      route: "/products",
+    },
+  ];
+
   return (
     <div className="flex gap-6 text-white relative">
-      <div className="bg-txt min-w-[30%] p-12 rounded-2xl flex flex-col items-center justify-center gap-12 max-xl:items-center  max-xl:gap-8 max-lg:min-h-150 max-lg:min-w-full max-lg:justify-start max-lg:gap-3 max-md:min-h-140 max-md:p-5 max-sm:min-h-100 max-sm:gap-2">
+      <div className="bg-txt min-w-[30%] p-12 rounded-2xl flex flex-col items-center justify-center gap-12 max-xl:items-center  max-xl:gap-8 max-lg:min-h-170 max-lg:min-w-full max-lg:justify-start max-lg:gap-3 max-md:min-h-140 max-md:p-5 max-sm:min-h-120 max-sm:gap-2 ">
         <div className="flex flex-col gap-3 items-center">
           <span className="font-ms-madi text-2xl max-lg:text-4xl max-md:text-2xl max-sm:text-xl">
             ErickCoffee
@@ -30,8 +67,30 @@ const HeaderMainContent = () => {
         </a>
       </div>
 
-      <div className="min-h-120 max-xl:min-h-100 min-w-[70%]  overflow-hidden rounded-2xl max-lg:absolute max-lg:min-h-max  max-lg:bottom-15 max-lg:min-w-[30%] max-sm:bottom-5">
-        <Slider></Slider>
+      <div className="h-120 max-xl:h-100 w-[70%] overflow-hidden rounded-2xl max-lg:absolute max-lg:h-[60%] max-lg:w-[90%] max-lg:left-1/2 max-lg:-translate-x-1/2 max-lg:bottom-10  max-sm:bottom-2.5 max-sm:h-[65%] max-sm:w-[95%] ">
+        <Swiper
+          spaceBetween={0}
+          slidesPerView={1}
+          loop={true}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={true}
+          modules={[Autoplay, Pagination, Navigation]}
+          className="h-full w-full"
+        >
+          {slides.map((slide) => (
+            <SwiperSlide key={slide.id} className="">
+              <Link to={slide.route}>
+                <Img {...slide.img_props} />
+              </Link>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
 
       {/* <Button

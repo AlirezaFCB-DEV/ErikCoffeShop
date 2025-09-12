@@ -1,3 +1,5 @@
+import Img from "../../Img/Img";
+
 interface imgArrType {
   id: string;
   index: number;
@@ -19,7 +21,12 @@ const HeaderBottom = () => {
   return (
     <div className="flex items-center p-4 bg-secondary w-fit gap-24  h-16 move  max-xl:h-12">
       {doubleArr.map((item: imgArrType) => (
-        <img key={item.id} src="/images/image 6.svg" alt="تبلیغ"  className="max-xl:h-5"/>
+        <Img
+          key={item.id}
+          src="/images/image 6.svg"
+          alt="تبلیغ"
+          className="max-xl:h-5"
+        />
       ))}
     </div>
   );

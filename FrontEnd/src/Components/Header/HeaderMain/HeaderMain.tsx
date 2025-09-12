@@ -3,7 +3,7 @@ import NavigationMenu from "../../NavigationMenu/NavigationMenu";
 
 const HeaderMain = () => {
   return (
-    <section className="flex flex-col gap-12 max-md:gap-4">
+    <section className="flex flex-col gap-12 max-md:gap-4 w-full ">
       <NavigationMenu />
       <HeaderMainContent />
     </section>

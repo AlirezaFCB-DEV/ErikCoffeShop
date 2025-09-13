@@ -2,6 +2,7 @@ import { FaArrowLeftLong } from "react-icons/fa6";
 import Button from "../../../../Button/Button";
 import SPOffsAndTrainingWrapper from "../../../../SPOffsAndTrainingWrapper/SPOffsAndTrainingWrapper";
 import type { TrainingItemsProps } from "../Training_Items_Data";
+import Img from "../../../../Img/Img";
 
 const Training_Item = ({ img, date, text }: TrainingItemsProps) => {
   return (
@@ -9,7 +10,7 @@ const Training_Item = ({ img, date, text }: TrainingItemsProps) => {
       <SPOffsAndTrainingWrapper className="flex-1/3 hover:-translate-y-2 transition-transform group border-stroke bg-white border-2 py-4  px-3 flex flex-col  justify-between min-w-[360px] h-[400px]  select-none  cursor-pointer rounded-3xl outline-[10px] outline-[#ffffff1a] gap-y-12 max-xl:flex-1 max-xl:min-w-[420px] max-lg:min-w-[100%] max-lg:h-[450px] max-sm:h-fit">
         <div className="flex  justify-center flex-col gap-4 "> 
           <div className="flex justify-center">
-            <img
+            <Img
               src={img}
               alt="محصول"
               className="w-full h-[240px] max-lg:h-[260px] max-sm:h-[200px]"

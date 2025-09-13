@@ -4,6 +4,7 @@ import { IoMdLocate } from "react-icons/io";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { FaWhatsapp } from "react-icons/fa";
 import { PiFacebookLogo } from "react-icons/pi";
+import Img from "../Img/Img";
 
 const Footer = () => {
   return (
@@ -52,8 +53,8 @@ const Footer = () => {
             </a>
           </div>
           <div className="flex justify-between">
-            <img src="/images/footer/img1.png" alt="عکس" className="w-[100px]" />
-            <img src="/images/footer/img2.png" alt="عکس" className="w-[100px]" />
+            <Img src="/images/footer/img1.png" alt="عکس" className="w-[100px]" />
+            <Img src="/images/footer/img2.png" alt="عکس" className="w-[100px]" />
           </div>
         </div>
       </footer>

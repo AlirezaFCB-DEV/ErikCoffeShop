@@ -4,6 +4,7 @@ import Nav_Logo from "../../Nav_Logo/Nav_Logo";
 import Nav_List from "../../Nav_List/Nav_List";
 import { useState } from "react";
 import { RxCross2 } from "react-icons/rx";
+import Img from "../../Img/Img";
 
 interface HeaderTop {
   children: React.ReactNode;
@@ -17,7 +18,7 @@ const HeaderTop = ({ children, leftIconRoute }: HeaderTop) => {
     <section className="flex justify-between items-center ">
       <div className="flex flex-row-reverse justify-center items-center gap-2 max-sm:hidden ">
         <div className="bg-secondary p-3 rounded-full">
-          <img src="/images/coffee.svg" alt="image" className="size-4.5" />
+          <Img src="/images/coffee.svg" alt="image" className="size-4.5" />
         </div>
         <div className="text-left leading-4.5">
           <h2 className="font-iran-yekan-bold text-primary text-lg">-۰۲۱</h2>
@@ -47,7 +48,7 @@ const HeaderTop = ({ children, leftIconRoute }: HeaderTop) => {
       </div>
       <div>
         <Link to="/">
-          <img src="/images/image 1.svg" alt="" />
+          <Img src="/images/image 1.svg" alt="Logo" />
         </Link>
       </div>
       <div className="flex items-center gap-0.5">

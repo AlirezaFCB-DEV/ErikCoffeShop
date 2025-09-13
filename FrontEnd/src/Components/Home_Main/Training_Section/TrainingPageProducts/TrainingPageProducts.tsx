@@ -2,7 +2,6 @@ import { FaArrowLeftLong } from "react-icons/fa6";
 import Button from "../../../Button/Button";
 import { TrainingItems } from "./Training_Items_Data";
 import Training_Item from "./Training_Item/Training_Item";
-import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 

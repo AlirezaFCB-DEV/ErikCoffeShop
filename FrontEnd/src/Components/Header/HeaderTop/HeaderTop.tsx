@@ -1,18 +1,18 @@
 import { Link } from "react-router-dom";
 import Button from "../../Button/Button";
-import Nav_Logo from "../../Nav_Logo/Nav_Logo";
 import Nav_List from "../../Nav_List/Nav_List";
 import { useState } from "react";
-import { RxCross2 } from "react-icons/rx";
 import Img from "../../Img/Img";
+import Nav_Title from "../../Nav_Title/Nav_Title";
+import { FaInstagram, FaUser } from "react-icons/fa";
+import Mobile_Side_Menu from "../../Moblie_Side_Menu/Moblie_Side_Menu";
+import { nav_menu_items } from "../../../templates/Nav_Temp_Content/Nav_Temp_Content";
+import { IoCart } from "react-icons/io5";
 
-interface HeaderTop {
-  children: React.ReactNode;
-  leftIconRoute: string;
-}
-
-const HeaderTop = ({ children, leftIconRoute }: HeaderTop) => {
-  const [is_active_mobile, set_is_active_mobile] = useState<Boolean>(false);
+const HeaderTop = () => {
+  const [is_active_mobile, set_is_active_mobile] = useState<
+    "off" | "left_nav" | "right_nav"
+  >("off");
 
   return (
     <section className="flex justify-between items-center ">
@@ -27,25 +27,30 @@ const HeaderTop = ({ children, leftIconRoute }: HeaderTop) => {
       </div>
       <Button
         className={`hidden bg-primary size-12 max-sm:flex items-center flex-col justify-center gap-1 rounded-full`}
-        onClick={() => set_is_active_mobile(true)}
+        onClick={() => set_is_active_mobile("right_nav")}
       >
         <span className="mobile_menu_lines"></span>
         <span className="mobile_menu_lines"></span>
         <span className="mobile_menu_lines"></span>
       </Button>
-      <div
-        className={`${
-          is_active_mobile ? "translate-x-0" : "translate-x-150"
-        } hidden max-sm:flex flex-col fixed top-0 -right-0 z-40 bg-txt w-4/5 h-[110vh] text-white p-8 gap-8 transition-transform duration-500`}
+
+      <Mobile_Side_Menu
+        dir="r"
+        title={
+          <Nav_Title route="https://instagram.com/erick.cafeee">
+            <div className="flex bg-white-20 p-2.5 rounded-full items-center gap-1">
+              <span className="text-sm mt-0.5 max-sm:text-xl">
+                Erick.Cafeee
+              </span>
+              <FaInstagram className="text-2xl max-xl:text-xl max-sm:text-2xl" />
+            </div>
+          </Nav_Title>
+        }
+        is_active={is_active_mobile}
+        set_is_active={set_is_active_mobile}
       >
-        <div className="flex items-center justify-center relative">
-          <Nav_Logo />
-          <Button onClick={() => set_is_active_mobile(false)}>
-            <RxCross2 className="text-4xl -top-3 -left-3 absolute" />
-          </Button>
-        </div>
-        <Nav_List />
-      </div>
+        <Nav_List def_temp={nav_menu_items}></Nav_List>
+      </Mobile_Side_Menu>
       <div>
         <Link to="/">
           <Img src="/images/image 1.svg" alt="Logo" />
@@ -60,11 +65,17 @@ const HeaderTop = ({ children, leftIconRoute }: HeaderTop) => {
             ورود/ثبت نام
           </span>
         </Link>
-        <Link to={leftIconRoute} className="group">
-          <button className="transition-colors cursor-pointer bg-primary p-2.5 border-2 border-primary rounded-full group-hover:bg-white ">
-            {children}
-          </button>
+        <Link to="/cart" className="group">
+          <Button className="transition-colors cursor-pointer bg-primary p-2.5 border-2 border-primary rounded-full group-hover:bg-white max-sm:hidden">
+            <IoCart className="header-top-icon"></IoCart>
+          </Button>
         </Link>
+        <Button
+          className="hidden bg-primary p-2.5 border-2 border-primary rounded-full max-sm:flex"
+          onClick={() => set_is_active_mobile("left_nav")}
+        >
+          <FaUser className="header-top-icon" />
+        </Button>
       </div>
     </section>
   );

@@ -15,8 +15,6 @@ const SpecialOffs = () => {
 
   const slides_counts = responsive_count_slides(4);
 
-  console.log(slides_counts);
-
   return (
     <SPOffsAndTrainingWrapper className="bg-white outline-[10px] outline-[#ffffff1a] drop-shadow-[#0000000D] drop-shadow-2xl w-[85%] absolute top-30 left-1/2 -translate-x-1/2 rounded-4xl py-8  max-xl:w-4/5 max-xl:px-7.5 flex justify-center items-center px-8 max-sm:w-[95%] max-sm:outline-8">
       <div className=" w-full ">

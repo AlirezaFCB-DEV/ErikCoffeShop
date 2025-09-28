@@ -41,12 +41,6 @@
   --font-ms-madi: ms-madi;
 }
 
-@layer base {
-  img {
-    
-  }
-}
-
 @layer utilities {
   .container {
     @apply mx-auto w-full max-sm:w-[98%]

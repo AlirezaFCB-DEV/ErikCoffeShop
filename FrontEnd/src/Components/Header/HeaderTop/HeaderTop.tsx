@@ -16,8 +16,8 @@ const HeaderTop = () => {
   >("off");
 
   const navigate = useNavigate();
-  const [is_login, set_is_login] = useState<boolean>(false);
-
+  // const [is_login, set_is_login] = useState<boolean>(false);
+  const is_login = false
   const user_logged_handler = () => {
     is_login ? set_is_active_mobile("left_nav") : navigate("/signin_or_register");
   };

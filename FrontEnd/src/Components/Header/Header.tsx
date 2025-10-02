@@ -1,7 +1,6 @@
 import HeaderBottom from "./HeaderBottom/HeaderBottom";
 import HeaderMain from "./HeaderMain/HeaderMain";
 import HeaderTop from "./HeaderTop/HeaderTop";
-import { IoCart } from "react-icons/io5";
 
 const Header = () => {
   return (

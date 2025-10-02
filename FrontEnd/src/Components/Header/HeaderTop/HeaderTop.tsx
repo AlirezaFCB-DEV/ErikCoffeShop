@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import Button from "../../Button/Button";
 import Nav_List from "../../Nav_List/Nav_List";
 import { useState } from "react";
@@ -7,13 +7,23 @@ import Nav_Title from "../../Nav_Title/Nav_Title";
 import { FaInstagram, FaUser } from "react-icons/fa";
 import Mobile_Side_Menu from "../../Moblie_Side_Menu/Moblie_Side_Menu";
 import { nav_menu_items } from "../../../templates/Nav_Temp_Content/Nav_Temp_Content";
-import { IoCart } from "react-icons/io5";
+import { IoCart , IoHome } from "react-icons/io5";
+
 
 const HeaderTop = () => {
   const [is_active_mobile, set_is_active_mobile] = useState<
     "off" | "left_nav" | "right_nav"
   >("off");
 
+  const navigate = useNavigate();
+  const [is_login, set_is_login] = useState<boolean>(false);
+
+  const user_logged_handler = () => {
+    is_login ? set_is_active_mobile("left_nav") : navigate("/signin_or_register");
+  };
+
+  const current_route = useLocation().pathname;
+  
   return (
     <section className="flex justify-between items-center ">
       <div className="flex flex-row-reverse justify-center items-center gap-2 max-sm:hidden ">
@@ -65,17 +75,42 @@ const HeaderTop = () => {
             ورود/ثبت نام
           </span>
         </Link>
-        <Link to="/cart" className="group">
+        <Link
+          to={current_route === "/cart" ? "/home" : "/cart"}
+          className="group"
+        >
           <Button className="transition-colors cursor-pointer bg-primary p-2.5 border-2 border-primary rounded-full group-hover:bg-white max-sm:hidden">
-            <IoCart className="header-top-icon"></IoCart>
+            {current_route === "/cart" ? (
+              <IoHome className="header-top-icon" />
+            ) : (
+              <IoCart className="header-top-icon"></IoCart>
+            )}
           </Button>
         </Link>
         <Button
           className="hidden bg-primary p-2.5 border-2 border-primary rounded-full max-sm:flex"
-          onClick={() => set_is_active_mobile("left_nav")}
+          
+          onClick={() => user_logged_handler()}
         >
           <FaUser className="header-top-icon" />
         </Button>
+        <Mobile_Side_Menu
+          dir="l"
+          title={
+            <Nav_Title route="https://instagram.com/erick.cafeee">
+              <div className="flex bg-white-20 p-2.5 rounded-full items-center gap-1">
+                <span className="text-sm mt-0.5 max-sm:text-xl">
+                  Erick.Cafeee
+                </span>
+                <FaInstagram className="text-2xl max-xl:text-xl max-sm:text-2xl" />
+              </div>
+            </Nav_Title>
+          }
+          is_active={is_active_mobile}
+          set_is_active={set_is_active_mobile}
+        >
+          <Nav_List def_temp={nav_menu_items}></Nav_List>
+        </Mobile_Side_Menu>
       </div>
     </section>
   );

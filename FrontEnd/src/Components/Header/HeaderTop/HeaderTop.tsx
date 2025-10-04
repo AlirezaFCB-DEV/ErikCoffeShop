@@ -2,13 +2,13 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import Button from "../../Button/Button";
 import Nav_List from "../../Nav_List/Nav_List";
 import { useState } from "react";
-import Img from "../../Img/Img";
 import Nav_Title from "../../Nav_Title/Nav_Title";
 import { FaInstagram, FaUser } from "react-icons/fa";
 import Mobile_Side_Menu from "../../Moblie_Side_Menu/Moblie_Side_Menu";
 import { nav_menu_items } from "../../../templates/Nav_Temp_Content/Nav_Temp_Content";
-import { IoCart , IoHome } from "react-icons/io5";
-
+import { IoCart, IoHome } from "react-icons/io5";
+import Contact_Us_Phone from "../../Contact_Us_Phone/Contact_Us_Phone";
+import Logo from "../../Logo/Logo";
 
 const HeaderTop = () => {
   const [is_active_mobile, set_is_active_mobile] = useState<
@@ -17,24 +17,18 @@ const HeaderTop = () => {
 
   const navigate = useNavigate();
   // const [is_login, set_is_login] = useState<boolean>(false);
-  const is_login = false
+  const is_login = false;
   const user_logged_handler = () => {
-    is_login ? set_is_active_mobile("left_nav") : navigate("/signin_or_register");
+    is_login
+      ? set_is_active_mobile("left_nav")
+      : navigate("/login_or_register");
   };
 
   const current_route = useLocation().pathname;
-  
+
   return (
     <section className="flex justify-between items-center ">
-      <div className="flex flex-row-reverse justify-center items-center gap-2 max-sm:hidden ">
-        <div className="bg-secondary p-3 rounded-full">
-          <Img src="/images/coffee.svg" alt="image" className="size-4.5" />
-        </div>
-        <div className="text-left leading-4.5">
-          <h2 className="font-iran-yekan-bold text-primary text-lg">-۰۲۱</h2>
-          <span className="font-iran-yekan">۱۲۳۲۳۲۴۳۴</span>
-        </div>
-      </div>
+      <Contact_Us_Phone />
       <Button
         className={`hidden bg-primary size-12 max-sm:flex items-center flex-col justify-center gap-1 rounded-full`}
         onClick={() => set_is_active_mobile("right_nav")}
@@ -61,14 +55,10 @@ const HeaderTop = () => {
       >
         <Nav_List def_temp={nav_menu_items}></Nav_List>
       </Mobile_Side_Menu>
-      <div>
-        <Link to="/">
-          <Img src="/images/image 1.svg" alt="Logo" />
-        </Link>
-      </div>
+      <Logo />
       <div className="flex items-center gap-0.5">
         <Link
-          to="/login-register"
+          to="/login_or_register"
           className="transition-colors duration-200 group hover:border-primary cursor-pointer py-2 pb-3 px-5 rounded-full flex justify-center items-center border-2 max-sm:hidden"
         >
           <span className="transition-colors duration-200 group-hover:text-primary">
@@ -89,7 +79,6 @@ const HeaderTop = () => {
         </Link>
         <Button
           className="hidden bg-primary p-2.5 border-2 border-primary rounded-full max-sm:flex"
-          
           onClick={() => user_logged_handler()}
         >
           <FaUser className="header-top-icon" />

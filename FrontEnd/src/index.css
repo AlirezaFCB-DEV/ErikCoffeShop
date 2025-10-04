@@ -54,6 +54,11 @@
   .no_scroll_x::-webkit-scrollbar {
     display: none;
   }
+
+  .tel_inp_parent:has(input:focus) .tel_inp_icon{
+      @apply text-primary
+  }
+  
 }
 
 @layer components {

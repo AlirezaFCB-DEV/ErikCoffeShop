@@ -6,6 +6,7 @@ import Home from "./Pages/Home/Home";
 import Products from "./Pages/Products/Products";
 import Tutorials from "./Pages/Articles/Tutorials";
 import User from "./Pages/User/User";
+import Account from "./Pages/Account/Account";
 
 interface RoutesProps {
   path: string;
@@ -27,6 +28,7 @@ const routes: RoutesProps[] = [
   { path: "/about", element: <About /> },
   { path: "/contact", element: <Contact /> },
   { path: "/products", element: <Products /> },
+  {path: "/login_or_register" , element: <Account />},
   { path: "*", element: <Home /> },
 ];
 

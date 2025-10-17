@@ -43,7 +43,7 @@
 
 @layer utilities {
   .container {
-    @apply mx-auto w-full max-sm:w-[98%]
+    @apply mx-auto w-full max-sm:w-[98%];
   }
 
   .no_scroll_x {
@@ -55,10 +55,9 @@
     display: none;
   }
 
-  .tel_inp_parent:has(input:focus) .tel_inp_icon{
-      @apply text-primary
+  .tel_inp_parent:has(input:focus) .tel_inp_icon {
+    @apply text-primary;
   }
-  
 }
 
 @layer components {
@@ -84,7 +83,7 @@
   }
 
   .special-offs-product {
-    @apply min-h-110
+    @apply min-h-110;
   }
 
   .best-sellers-products {
@@ -212,7 +211,7 @@
   }
 
   .custom_scroll::-webkit-scrollbar-track {
-    background: #fff8f5; 
+    background: #fff8f5;
     border-radius: 4px;
     margin: 4px 0;
   }
@@ -225,6 +224,10 @@
 
   .custom_scroll::-webkit-scrollbar-thumb:hover {
     background-color: #a86a56;
+  }
+
+  .login_or_register_inputs_parent {
+    @apply flex w-full bg-white max-sm:opacity-80 p-3 items-center rounded-xl gap-4 border-2 border-[#9e624c48] has-[input:focus]:border-primary  transition-colors;
   }
 }
 

@@ -63,10 +63,10 @@ const Account = () => {
 
             {is_active_code ? (
               <div className="flex justify-between gap-2" dir="ltr">
-                {code?.map((digit, index) => (
+                {code?.map((_digit, index) => (
                   <div
                     className="flex-1 login_or_register_inputs_parent tel_inp_parent"
-                    key={crypto.randomUUID()}
+                    key={index}
                   >
                     <input
                       type="tel"

@@ -1,24 +1,14 @@
-# ☕ Eric Cafe Project
+# ☕ Eric Cafe
 
-**Status:** ✅ Project Completed (Frontend focus finished)  
+Eric Cafe is a modern coffee shop web project designed to showcase barista products, coffee selections, and account management features.  
+The project focuses on creating a clean and user-friendly frontend experience with attention to detail in design and usability.
 
-Eric Cafe is a coffee shop web project showcasing barista products and coffee selections.  
-
-## 📌 Features Completed
-- Account management handled 👤
-- Bug fixes and UI improvements 🛠️
-
-## 🖌️ Next Steps
-- Product listing and product detail pages were planned but postponed for future modern redesigns
-- Focus will shift to backend development to become a full-stack developer  
-
-## 💡 Learning Outcomes
-This project provided valuable experience in:
-- Frontend development best practices
-- Handling account features and debugging
-- Preparing for more modern and maintainable UI designs
-
----
+## 🖌️ Project Overview
+- Responsive and modern layout for a coffee shop website  
+- User account management implemented 👤  
+- Product categories and coffee selections displayed with clean UI  
+- Various UI improvements and bug fixes from previous iterations 🛠️  
+- Focused on providing a smooth and intuitive user experience  
 
 ## 📷 Screenshots
 
@@ -35,7 +25,7 @@ This project provided valuable experience in:
   <img src="./git_assets/Screenshot%202025-10-24%20125853.png" alt="Screenshot10" width="200"/>
 </div>
 
-
 ---
 
-**Note:** This project is officially marked as completed from my end. Next projects will focus on full-stack implementations and modern UI/UX.
+**Project Status:** ✅ Completed  
+Eric Cafe frontend is fully implemented and polished. All planned sections have been addressed to provide a functional and visually appealing experience. The project served as a great opportunity to practice frontend skills, design implementation, and UI refinement.

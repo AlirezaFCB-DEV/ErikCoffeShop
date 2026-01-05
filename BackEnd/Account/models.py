@@ -28,6 +28,7 @@ class CustomUser(AbstractBaseUser , PermissionsMixin) :
 class Otp(models.Model) :
     user = models.ForeignKey("CustomUser" , on_delete=models.CASCADE)
     code = models.CharField(max_length=6)
+    attempts = models.IntegerField(default=0)
     created_at = models.DateTimeField(auto_now_add=True)
        
     def otp_generator(self) :

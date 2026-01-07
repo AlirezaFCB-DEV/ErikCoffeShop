@@ -4,7 +4,7 @@ from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
 from django.contrib.auth.forms import ReadOnlyPasswordHashField
 from django.core.exceptions import ValidationError
 
-from Account.models import CustomUser
+from Account.models import CustomUser, Otp
 
 # Register your models here.
 
@@ -68,5 +68,6 @@ class UserAdmin(BaseUserAdmin):
     
 
 
-admin.site.register(CustomUser , UserAdmin)
+admin.site.register(CustomUser , UserAdmin )
+admin.site.register(Otp)
 

@@ -1,9 +1,6 @@
 from django.contrib.auth.models import AbstractBaseUser  , PermissionsMixin
 from django.db import models
 from .managers import CustomUserManager
-from django.utils import timezone
-from datetime import timedelta
-import random
 
 # Create your models here.
 
@@ -26,13 +23,10 @@ class CustomUser(AbstractBaseUser , PermissionsMixin) :
         return self.phone_number
 
 class Otp(models.Model) :
-    user = models.ForeignKey("CustomUser" , on_delete=models.CASCADE)
+    phone = models.CharField(max_length=11)
     code = models.CharField(max_length=6)
     attempts = models.IntegerField(default=0)
     created_at = models.DateTimeField(auto_now_add=True)
        
-    def otp_generator(self) :
-        otp = str(random.randint(100000,999999))
-        self.code = otp
-        self.save()
-        return otp
+    def __str__(self):
+        return f"{self.phone} - {self.code}"

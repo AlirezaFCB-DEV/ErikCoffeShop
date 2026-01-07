@@ -16,9 +16,9 @@ def otp_generator():
     return otp
 
 
-def otp_verifier(self, user_obj, otp_code):
+def otp_verifier(identifier, otp_code):
     try:
-        otp_record = Otp.objects.get(user=user_obj)
+        otp_record = Otp.objects.get(phone=identifier)
         if otp_record.code == otp_code:
 
             if otp_record.created_at + timedelta(minutes=2) < timezone.now() or otp_record.attempts > 3:

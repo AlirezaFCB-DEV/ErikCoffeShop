@@ -2,6 +2,7 @@ import re
 import random
 from django.utils import timezone
 from datetime import timedelta
+from django.contrib.auth import get_user_model
 
 from .models import Otp
 
@@ -10,6 +11,10 @@ def is_phone(phone: str):
     pattern = r"^(?:\+98|0)?9\d{9}$"
     return re.match(pattern, phone)
 
+
+def is_email(email : str) :
+    pattern = r"^[\w\.-]+@[\w\.-]+\.\w+$"
+    return re.match(pattern , email)
 
 def otp_generator():
     otp = str(random.randint(100000, 999999))
@@ -35,3 +40,6 @@ def otp_verifier(identifier, otp_code):
 
     except Otp.DoesNotExist:
         return False
+
+def has_user(phone) :
+    return get_user_model().objects.filter(phone_number = phone).exists()

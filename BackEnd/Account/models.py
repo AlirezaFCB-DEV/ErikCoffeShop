@@ -30,3 +30,14 @@ class Otp(models.Model) :
        
     def __str__(self):
         return f"{self.phone} - {self.code}"
+    
+class Address(models.Model) :
+    user = models.ForeignKey("CustomUser" , on_delete=models.CASCADE , related_name="addresses")
+    province = models.CharField(max_length=20)
+    city = models.CharField(max_length=20)
+    postal_code = models.CharField(max_length=10)
+    full_address = models.TextField()
+    
+    def __str__(self):
+        return self.city
+    

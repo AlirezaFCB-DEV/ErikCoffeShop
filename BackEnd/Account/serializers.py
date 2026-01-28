@@ -2,13 +2,13 @@ from rest_framework import serializers
 from django.contrib.auth import get_user_model
 from .models import Address
 
-class UserSerializer (ser) :
-    
+class UserSerializer (serializers.ModelSerializer) :
     class Meta :
         model = get_user_model()
         fields = ["phone_number" , "first_name" , "last_name" , "email"]
         
-class AddressSerializer(ModelSerializer) :
+class AddressSerializer(serializers.ModelSerializer) :
+    user = serializers.PrimaryKeyRelatedField(read_only=True)
     class Meta :
         model = Address
-        fields = ["url" , "user" , "province" , "city" , "postal_code" , "full_address"]
+        fields = ["id" , "user" , "province" , "city" , "postal_code" , "full_address"]
